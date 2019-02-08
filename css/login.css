@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:400,600,700,900");
+body {
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login {
+  max-width: 330px;
+  font-family: "Muli", sans-serif;
+}
+
+.login-form {
+  display: block;
+}
+
+.login-form-logo {
+  width: 100%;
+  display: block;
+  margin-bottom: 57px;
+}
+
+.login-form form {
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.login-form form input,
+.login-form form a,
+.login-form form button {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login-form form .far {
+  color: #FD6500;
+  font-size: 18px;
+  z-index: 3px;
+}
+
+.login-form form input {
+  height: 40px;
+  border: solid 1.5px #f2f2f2;
+  border-radius: 10px;
+  font-weight: 600;
+  font-family: "Muli", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 13px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  color: #b3b3b4;
+  padding-left: 45px;
+}
+
+.login-form form input:hover {
+  border: solid 1.5px #FD6500;
+}
+
+.login-form form input::-webkit-input-placeholder {
+  color: #b3b3b4;
+  letter-spacing: .5px;
+  font-weight: 600;
+}
+
+.login-form form input:-ms-input-placeholder {
+  color: #b3b3b4;
+  letter-spacing: .5px;
+  font-weight: 600;
+}
+
+.login-form form input::-ms-input-placeholder {
+  color: #b3b3b4;
+  letter-spacing: .5px;
+  font-weight: 600;
+}
+
+.login-form form input::placeholder {
+  color: #b3b3b4;
+  letter-spacing: .5px;
+  font-weight: 600;
+}
+
+.login-form form input:focus {
+  border: solid 1.5px #687C8F;
+  color: #687C8F;
+  background: #f2f2f2;
+}
+
+.login-form form a {
+  color: #b3b3b4;
+  font-weight: bold;
+  margin-bottom: 30px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.login-form form a:hover {
+  color: #687C8F;
+}
+
+.login-form form button {
+  height: 40px;
+  border: solid 1.5px #687C8F;
+  border-radius: 10px;
+  background: rgba(0, 69, 144, 0.1);
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  letter-spacing: .5px;
+  color: #687C8F;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.login-form form button:hover {
+  border: solid 1.5px #FD6500;
+  border-radius: 10px;
+  color: #FD6500;
+  background: #f8f8f8;
+}
+
+.login-form form button:disabled {
+  font-weight: bold;
+  font-family: "Muli", sans-serif;
+  letter-spacing: 2px;
+  border: solid 1.5px #f2f2f2;
+  background: #f8f8f8;
+  height: 40px;
+  color: #b3b3b4;
+  border-radius: 10px;
+}
+
+.login-register p,
+.login-register button {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.login-register p {
+  color: #b3b3b4;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.login-register button {
+  height: 40px;
+  border: solid 1.5px #687C8F;
+  border-radius: 10px;
+  background: rgba(0, 69, 144, 0.1);
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  letter-spacing: .5px;
+  color: #687C8F;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.login-register button:hover {
+  border: solid 1.5px #FD6500;
+  border-radius: 10px;
+  color: #FD6500;
+  background: #f8f8f8;
+}
+/*# sourceMappingURL=login.css.map */

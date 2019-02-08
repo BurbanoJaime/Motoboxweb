@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:400,600,700,900");
+body {
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Muli", sans-serif;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.register-logo {
+  width: 100%;
+  display: block;
+  margin-bottom: 57px;
+  text-align: center;
+}
+
+.register-logo img {
+  max-width: 280px;
+}
+
+.register-logo p {
+  color: #b3b3b4;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.register-service {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border: solid 1.5px #687C8F;
+  color: #687C8F;
+  font-weight: 700;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+  background: #f8f8f8;
+}
+
+.register-service-services {
+  display: inline-block;
+  padding: 4px;
+  border-right: solid 1.5px #687C8F;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.register-service-services p {
+  padding: 20px 70px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.register-service-services p:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.register-service-services:nth-child(1) {
+  border-top-left-radius: 15px;
+}
+
+.register-service-services:nth-child(2) {
+  font-weight: 400;
+}
+
+.register-service-services:nth-child(3) {
+  width: 500px;
+  border: none;
+  display: inline-block;
+}
+
+.register-service-services:nth-child(3) p {
+  border: solid 1.5px #FD6500;
+  background: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  letter-spacing: .5px;
+  margin: 10px 10px;
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: inline-block;
+}
+
+.register-service-services:nth-child(3) p:hover {
+  background: #FD6500;
+  color: #ffffff;
+}
+
+.service-selected {
+  background: #f8f8f8;
+}
+/*# sourceMappingURL=register-two.css.map */
