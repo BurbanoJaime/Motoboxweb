@@ -99,14 +99,48 @@ body {
                 width: max-content;
                 display: inline-block;
             }
-            p:hover{
+
+            p:hover {
                 background: $orange;
                 color: #ffffff;
             }
         }
+
+        &-services:nth-child(4) {
+            display: block;
+            border-top: solid 1.5px $blueFont;
+            border-right: none;
+        }
     }
 
+    &-nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: flex-start;
+
+        margin-top: 63px;
+
+        div {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: solid 1.5px $fontGray;
+            border-radius: 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        :last-child {
+            background: $fontGray;
+
+        }
+    }
 }
+
+
 
 .service-selected {
     background: $gray;
