@@ -305,9 +305,15 @@ body {
     }
 
     &-content {
-        height: 100%;
-        padding: 20px 50px;
+        height: 85%;
+        padding: 20px 30px;
         margin-top: 140px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: flex-start;
+        align-items: flex-start;
         box-sizing: border-box;
         overflow-y: scroll;
 
@@ -315,7 +321,7 @@ body {
             background: $gray;
             border: solid 1.5px $blueFont;
             border-radius: 25px;
-            width: 280px;
+            width: 250px;
             height: 180px;
             font-family: $muli;
             text-align: center;
