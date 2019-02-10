@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900");
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .dashboard {
   background: #f8f8f8;
   width: 20vw;
+  height: 100vh;
   -webkit-transition: all .4s;
   transition: all .4s;
   -webkit-box-sizing: border-box;
@@ -10,7 +16,7 @@
   -webkit-box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.15);
   padding: 0 30px;
-  position: absolute;
+  position: fixed;
   z-index: 10;
 }
 
@@ -97,7 +103,12 @@
   text-align: left;
 }
 
-.dashboard-sort-center-cont-icons i {
+.dashboard-sort-center-cont-icons a {
+  text-decoration: none;
+  color: #6F6F6F;
+}
+
+.dashboard-sort-center-cont-icons a i {
   margin: 0 2px;
   cursor: pointer;
   -webkit-transition: all .2s;
@@ -105,11 +116,11 @@
   font-weight: 700;
 }
 
-.dashboard-sort-center-cont-icons i:hover {
+.dashboard-sort-center-cont-icons a i:hover {
   color: #FD6500;
 }
 
-.dashboard-sort-center-cont-icons-selected {
+.dashboard-sort-center-cont-icons .selected {
   color: #FD6500;
 }
 
@@ -203,6 +214,7 @@
 .turns {
   margin-left: 20vw;
   width: 80vw;
+  height: 100vh;
   -webkit-transition: all .4s;
   transition: all .4s;
   -webkit-box-sizing: border-box;
@@ -229,18 +241,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 80vw;
   background: #ffffff;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  -webkit-box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.15);
   padding: 15px 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-bottom: solid #f2f2f2 1px;
   z-index: 3;
-  position: absolute;
+  position: fixed;
 }
 
 .turns-head h1 {
@@ -320,8 +332,8 @@
           box-sizing: border-box;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  -webkit-box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.15);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,4 +375,105 @@
   font-family: "Muli", sans-serif;
   padding-left: 20px;
 }
-/*# sourceMappingURL=nuevo-turno.css.map */
+
+.turns-content {
+  height: 100%;
+  padding: 20px 50px;
+  margin-top: 140px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.turns-content-card {
+  background: #f8f8f8;
+  border: solid 1.5px #687C8F;
+  border-radius: 25px;
+  width: 280px;
+  height: 180px;
+  font-family: "Muli", sans-serif;
+  text-align: center;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.turns-content-card-info-title {
+  font-weight: 900;
+  font-size: 18px;
+  color: #6F6F6F;
+}
+
+.turns-content-card-info-appointment {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.turns-content-card-info-services span:first-child {
+  margin-left: 0;
+}
+
+.turns-content-card-info-services span {
+  margin: 0 5px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.turns-content-card-info-services span:hover {
+  color: #FD6500;
+}
+
+.turns-content-card-buttons-schedule {
+  width: 200px;
+  padding: 6px;
+  border: solid 1.5px #687C8F;
+  border-radius: 10px;
+  background: rgba(0, 69, 144, 0.1);
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  letter-spacing: .5px;
+  color: #687C8F;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  margin: 10px;
+  margin-bottom: 8px;
+}
+
+.turns-content-card-buttons-schedule:hover {
+  border-color: #FD6500;
+  color: #FD6500;
+  background: white;
+}
+
+.turns-content-card-buttons-cancel {
+  font-weight: 600;
+  border: none;
+  background: none;
+  color: #6F6F6F;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.turns-content-card-buttons-cancel:hover {
+  color: #FD6500;
+}
+/*# sourceMappingURL=nuevo-turno-ficha.css.map */

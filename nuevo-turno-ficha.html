@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/nuevo-turno-ficha.css" media="screen" />
+    <link rel="icon" href="assets/favicon.ico">
+    <title>MOTOBOXX</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+        <script src="js/tooltipster.bundle.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                    $('.tooltip').tooltipster();
+                });
+            </script>
+</head>
+
+<body>
+    <section class="dashboard">
+        <article class="dashboard-title">
+            <p>TALLER</p>
+            <span class="dashboard-title-name">EL GRINGO</span>
+            <!--Aquí se reemplaza por el nombre del taller-->
+        </article>
+
+        <article class="dashboard-sort">
+            <div class="dashboard-sort-center">
+                <div class="dashboard-sort-center-cont">
+                    <p>ORDENAR TURNOS</p>
+                    <div class="dashboard-sort-center-cont-icons">
+                        <a href="nuevo-turno-lista.html"><i class="fas fa-list-ul"></i></a>
+                        <a href="nuevo-turno-ficha.html" class="selected"><i class="fas fa-th"></i></a>
+                    </div>
+                </div>
+                <div class="dashboard-sort-center-input">
+                    <select name="" id="">
+                        <option value="" selected>Próximos Turnos</option>
+                        <option value="">Menor Cilindraje</option>
+                        <option value="">Mayor Cilindraje</option>
+                    </select>
+                </div>
+            </div>
+
+        </article>
+
+        <article class="dashboard-nav">
+            <div class="dashboard-nav-menu">
+                <a href="" class="selected">NUEVOS TURNOS</a>
+                <a href="">AGENDA</a>
+                <a href="">HISTORIAL</a>
+                <a href="">MIS MECÁNICOS</a>
+            </div>
+            <div class="dashboard-nav-logo">
+                <img src="assets/logo.png" alt="">
+            </div>
+        </article>
+
+    </section>
+    <section class="turns">
+        <section class="turns-head" id="head">
+            <h1>NUEVOS TURNOS</h1>
+
+            <div class="turns-head-user">
+                <div class="turns-head-user-name">
+                    <h4>ANDRÉS MANUEL</h4>
+                    <p>MECÁNICO</p>
+                </div>
+                <div class="turns-head-user-photo"></div>
+                <div class="turns-head-user-menu">
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </div>
+        </section>
+        <section class="turns-search">
+            <input type="search" placeholder="Marca - Modelo">
+
+            <select name="" id="">
+                <option value="" selected>Todos los servicios</option>
+                <option value="">Mecánica</option>
+                <option value="">Pintura</option>
+                <option value="">Partes</option>
+                <option value="">Lavado</option>
+                <option value="">Peritaje</option>
+                <option value="">Balanceo</option>
+            </select>
+        </section>
+        <section class="turns-content">
+                <article class="turns-content-card">
+                        <div class="turns-content-card-info">
+                            <h2 class="turns-content-card-info-title">Yamaha FZ 2019</h2>
+                            <p class="turns-content-card-info-appointment">Febrero 20 del 2019 - 8:00 am</p>
+                            <div class="turns-content-card-info-services">
+                                <span class="tooltip" title="Mecánica"><i class="fas fa-tools"></i></span>
+                                <span class="tooltip" title="Pintura"><i class="fas fa-fill-drip"></i></span>
+                                <span class="tooltip" title="Repuestos"><i class="fas fa-motorcycle"></i></span>
+                                <span class="tooltip" title="Lavado"><i class="fas fa-tint"></i></span>
+                                <span class="tooltip" title="Peritaje"><i class="fas fa-tachometer-alt"></i></span>
+                                <span class="tooltip" title="Balanceo"><i class="fas fa-balance-scale"></i></span>
+                            </div>
+                        </div>
+                        <div class="turns-content-card-buttons">
+                            <button class="turns-content-card-buttons-schedule">AGENDAR</button>
+                            <button class="turns-content-card-buttons-cancel">CANCELAR</button>
+                        </div>
+                    </article><article class="turns-content-card">
+                            <div class="turns-content-card-info">
+                                <h2 class="turns-content-card-info-title">Yamaha FZ 2019</h2>
+                                <p class="turns-content-card-info-appointment">Febrero 20 del 2019 - 8:00 am</p>
+                                <div class="turns-content-card-info-services">
+                                    <span class="tooltip" title="Mecánica"><i class="fas fa-tools"></i></span>
+                                    <span class="tooltip" title="Pintura"><i class="fas fa-fill-drip"></i></span>
+                                    <span class="tooltip" title="Repuestos"><i class="fas fa-motorcycle"></i></span>
+                                    <span class="tooltip" title="Lavado"><i class="fas fa-tint"></i></span>
+                                    <span class="tooltip" title="Peritaje"><i class="fas fa-tachometer-alt"></i></span>
+                                    <span class="tooltip" title="Balanceo"><i class="fas fa-balance-scale"></i></span>
+                                </div>
+                            </div>
+                            <div class="turns-content-card-buttons">
+                                <button class="turns-content-card-buttons-schedule">AGENDAR</button>
+                                <button class="turns-content-card-buttons-cancel">CANCELAR</button>
+                            </div>
+                        </article><article class="turns-content-card">
+                        <div class="turns-content-card-info">
+                            <h2 class="turns-content-card-info-title">Yamaha FZ 2019</h2>
+                            <p class="turns-content-card-info-appointment">Febrero 20 del 2019 - 8:00 am</p>
+                            <div class="turns-content-card-info-services">
+                                <span class="tooltip" title="Mecánica"><i class="fas fa-tools"></i></span>
+                                <span class="tooltip" title="Pintura"><i class="fas fa-fill-drip"></i></span>
+                                <span class="tooltip" title="Repuestos"><i class="fas fa-motorcycle"></i></span>
+                                <span class="tooltip" title="Lavado"><i class="fas fa-tint"></i></span>
+                                <span class="tooltip" title="Peritaje"><i class="fas fa-tachometer-alt"></i></span>
+                                <span class="tooltip" title="Balanceo"><i class="fas fa-balance-scale"></i></span>
+                            </div>
+                        </div>
+                        <div class="turns-content-card-buttons">
+                            <button class="turns-content-card-buttons-schedule">AGENDAR</button>
+                            <button class="turns-content-card-buttons-cancel">CANCELAR</button>
+                        </div>
+                    </article><article class="turns-content-card">
+                        <div class="turns-content-card-info">
+                            <h2 class="turns-content-card-info-title">Yamaha FZ 2019</h2>
+                            <p class="turns-content-card-info-appointment">Febrero 20 del 2019 - 8:00 am</p>
+                            <div class="turns-content-card-info-services">
+                                <span class="tooltip" title="Mecánica"><i class="fas fa-tools"></i></span>
+                                <span class="tooltip" title="Pintura"><i class="fas fa-fill-drip"></i></span>
+                                <span class="tooltip" title="Repuestos"><i class="fas fa-motorcycle"></i></span>
+                                <span class="tooltip" title="Lavado"><i class="fas fa-tint"></i></span>
+                                <span class="tooltip" title="Peritaje"><i class="fas fa-tachometer-alt"></i></span>
+                                <span class="tooltip" title="Balanceo"><i class="fas fa-balance-scale"></i></span>
+                            </div>
+                        </div>
+                        <div class="turns-content-card-buttons">
+                            <button class="turns-content-card-buttons-schedule">AGENDAR</button>
+                            <button class="turns-content-card-buttons-cancel">CANCELAR</button>
+                        </div>
+                    </article><article class="turns-content-card">
+                            <div class="turns-content-card-info">
+                                <h2 class="turns-content-card-info-title">Yamaha FZ 2019</h2>
+                                <p class="turns-content-card-info-appointment">Febrero 20 del 2019 - 8:00 am</p>
+                                <div class="turns-content-card-info-services">
+                                    <span class="tooltip" title="Mecánica"><i class="fas fa-tools"></i></span>
+                                    <span class="tooltip" title="Pintura"><i class="fas fa-fill-drip"></i></span>
+                                    <span class="tooltip" title="Repuestos"><i class="fas fa-motorcycle"></i></span>
+                                    <span class="tooltip" title="Lavado"><i class="fas fa-tint"></i></span>
+                                    <span class="tooltip" title="Peritaje"><i class="fas fa-tachometer-alt"></i></span>
+                                    <span class="tooltip" title="Balanceo"><i class="fas fa-balance-scale"></i></span>
+                                </div>
+                            </div>
+                            <div class="turns-content-card-buttons">
+                                <button class="turns-content-card-buttons-schedule">AGENDAR</button>
+                                <button class="turns-content-card-buttons-cancel">CANCELAR</button>
+                            </div>
+                        </article><article class="turns-content-card">
+                                <div class="turns-content-card-info">
+                                    <h2 class="turns-content-card-info-title">Yamaha FZ 2019</h2>
+                                    <p class="turns-content-card-info-appointment">Febrero 20 del 2019 - 8:00 am</p>
+                                    <div class="turns-content-card-info-services">
+                                        <span class="tooltip" title="Mecánica"><i class="fas fa-tools"></i></span>
+                                        <span class="tooltip" title="Pintura"><i class="fas fa-fill-drip"></i></span>
+                                        <span class="tooltip" title="Repuestos"><i class="fas fa-motorcycle"></i></span>
+                                        <span class="tooltip" title="Lavado"><i class="fas fa-tint"></i></span>
+                                        <span class="tooltip" title="Peritaje"><i class="fas fa-tachometer-alt"></i></span>
+                                        <span class="tooltip" title="Balanceo"><i class="fas fa-balance-scale"></i></span>
+                                    </div>
+                                </div>
+                                <div class="turns-content-card-buttons">
+                                    <button class="turns-content-card-buttons-schedule">AGENDAR</button>
+                                    <button class="turns-content-card-buttons-cancel">CANCELAR</button>
+                                </div>
+                            </article><article class="turns-content-card">
+                        <div class="turns-content-card-info">
+                            <h2 class="turns-content-card-info-title">Yamaha FZ 2019</h2>
+                            <p class="turns-content-card-info-appointment">Febrero 20 del 2019 - 8:00 am</p>
+                            <div class="turns-content-card-info-services">
+                                <span class="tooltip" title="Mecánica"><i class="fas fa-tools"></i></span>
+                                <span class="tooltip" title="Pintura"><i class="fas fa-fill-drip"></i></span>
+                                <span class="tooltip" title="Repuestos"><i class="fas fa-motorcycle"></i></span>
+                                <span class="tooltip" title="Lavado"><i class="fas fa-tint"></i></span>
+                                <span class="tooltip" title="Peritaje"><i class="fas fa-tachometer-alt"></i></span>
+                                <span class="tooltip" title="Balanceo"><i class="fas fa-balance-scale"></i></span>
+                            </div>
+                        </div>
+                        <div class="turns-content-card-buttons">
+                            <button class="turns-content-card-buttons-schedule">AGENDAR</button>
+                            <button class="turns-content-card-buttons-cancel">CANCELAR</button>
+                        </div>
+                    </article>
+        </section>
+    </section>
+</body>
+
+</html>

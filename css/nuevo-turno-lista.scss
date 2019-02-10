@@ -11,15 +11,21 @@ $blueFont:#687C8F;
 $blue: #004590;
 $orange: #FD6500;
 
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 .dashboard {
     background: $gray;
     width: 20vw;
+    height: 100vh;
     transition: all .4s;
     box-sizing: border-box;
     color: $fontGrayTitle;
     box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.15);
     padding: 0 30px;
-    position: absolute;
+    position: fixed;
     z-index: 10;
 
     &-title {
@@ -73,21 +79,27 @@ $orange: #FD6500;
                 }
 
                 &-icons {
-                    i {
-                        margin: 0 2px;
-                        cursor: pointer;
-                        transition: all .2s;
-                        font-weight: 700;
+                    a {
+                        text-decoration: none;
+                        color: $fontGrayTitle;
+
+                        i {
+                            margin: 0 2px;
+                            cursor: pointer;
+                            transition: all .2s;
+                            font-weight: 700;
+                        }
+
+                        i:hover {
+                            color: $orange;
+                        }
                     }
 
-                    i:hover {
+                    .selected {
                         color: $orange;
-                    }
-
-                    &-selected {
-                        color: $orange;
 
                     }
+
                 }
             }
 
@@ -166,6 +178,7 @@ $orange: #FD6500;
 .turns {
     margin-left: 20vw;
     width: 80vw;
+    height: 100vh;
     transition: all .4s;
     box-sizing: border-box;
     color: $fontGrayTitle;
@@ -178,16 +191,16 @@ $orange: #FD6500;
         justify-content: space-between;
         align-content: stretch;
         align-items: center;
-        width: 100%;
+        width: 80vw;
         background: #ffffff;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
-        box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.15);
         padding: 15px 50px;
         box-sizing: border-box;
         border-bottom: solid $darkGray 1px;
         z-index: 3;
-        position: absolute;
+        position: fixed;
 
         h1 {
             font-weight: 900;
@@ -240,11 +253,7 @@ $orange: #FD6500;
                 i:hover {
                     transform: translateY(5px);
                 }
-
             }
-
-
-
         }
     }
 
@@ -258,7 +267,7 @@ $orange: #FD6500;
         box-sizing: border-box;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
-        box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.15);
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -289,6 +298,116 @@ $orange: #FD6500;
             font-weight: 600;
             font-family: $muli;
             padding-left: 20px;
+
+        }
+
+    }
+
+    &-content {
+        height: 100%;
+        padding: 20px 50px;
+        margin-top: 140px;
+        box-sizing: border-box;
+        overflow-y: scroll;
+
+        &-card {
+            background: $gray;
+            border: solid 1.5px $blueFont;
+            border-radius: 25px;
+            width: 100%;
+            height: 120px;
+            font-family: $muli;
+            text-align: center;
+            margin: 25px 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-content: stretch;
+            align-items: center;
+            box-sizing: border-box;
+            
+            &-info {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-content: stretch;
+                align-items: flex-start;
+                padding-left: 40px;
+
+                &-title {
+                    font-weight: 900;
+                    font-size: 18px;
+                    color: $fontGrayTitle;
+                }
+
+                &-appointment {
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    font-weight: 600;
+                    margin: 10px 0;
+                }
+                &-services{
+                    span:first-child{
+                        margin-left: 0;
+                    }
+                 span{
+                     margin: 0 5px;
+                     transition: all .2s;
+                 }
+                 span:hover{
+                     color: $orange;
+                 }
+                }
+
+            }
+
+            &-buttons {
+                padding-right: 50px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-content: stretch;
+                align-items: center;
+
+                &-schedule {
+                    width: 200px;
+                    padding: 6px;
+                    border: solid 1.5px $blueFont;
+                    border-radius: 10px;
+                    background: rgba(0, 69, 144, 0.1);
+                    font-family: $muli;
+                    font-weight: 900;
+                    letter-spacing: .5px;
+                    color: $blueFont;
+                    transition: all .2s;
+                    margin: 10px;
+                    margin-bottom: 8px;
+
+                }
+
+                &-schedule:hover {
+                    border-color: $orange;
+                    color: $orange;
+                    background: white;
+                }
+
+                &-cancel {
+                    font-weight: 600;
+                    border: none;
+                    background: none;
+                    color: $fontGrayTitle;
+                    transition: all .2s;
+                }
+
+                &-cancel:hover{
+                    color: $orange;
+                }
+
+            }
+
 
         }
 
