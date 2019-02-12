@@ -171,6 +171,44 @@ body {
 
         }
     }
+
+    &-btn {
+        width: 100%;
+        text-align: center;
+margin-top: 50px;
+        button {
+            height: 40px;
+            border: solid 1.5px $blueFont;
+            border-radius: 10px;
+            background: rgba(0, 69, 144, 0.1);
+            font-family: $muli;
+            font-weight: 900;
+            letter-spacing: .5px;
+            color: $blueFont;
+            transition: all .4s;
+            width: 100%;
+            max-width: 320px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            border: solid 1.5px $orange;
+            border-radius: 10px;
+            color: $orange;
+            background: $gray;
+        }
+
+        button:disabled {
+            font-weight: bold;
+            font-family: $muli;
+            letter-spacing: 2px;
+            border: solid 1.5px $darkGray;
+            background: $gray;
+            height: 40px;
+            color: $fontGray;
+            border-radius: 10px;
+        }
+    }
 }
 
 
