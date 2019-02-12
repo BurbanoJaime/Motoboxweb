@@ -272,3 +272,24 @@ body {
     }
 
 }
+
+.popup-title{
+    color: $blueFont;
+    font-weight: bold;
+    font-family: $muli;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.popup-text{
+    color: #6F6F6F;
+    font-family: $muli;
+    margin-bottom: 20px;
+
+    .bolder{
+        font-family: 700;
+        font-family: $muli;
+
+    }
+}

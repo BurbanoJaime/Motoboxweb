@@ -76,18 +76,28 @@
             Swal.fire({
                 title: 'Escríbenos el servicios que ofreces',
                 showCloseButton: true,
-                html:
-                '<input id="swal-input1" class="swal2-input" type="textarea">',
+                html: '<input id="swal-input1" class="swal2-input" type="textarea">',
                 focusConfirm: false,
-                preConfirm:()=>{
-                    return[
-                       document.getElementById('swal-input1').value,
-                        
+                preConfirm: () => {
+                    return [
+                        document.getElementById('swal-input1').value,
+
                     ]
                     console.log(document.getElementById('swal-input1').value);
                 }
             })
         });
+    </script>
+
+    <script>
+        const create = document.getElementById('register-one_btn');
+        create.addEventListener('click', function () {
+            Swal.fire({
+                html:'<h3 class="popup-title">¡BIENVENIDO!</h3>' +
+                '<h4 class="popup-text"> NOS HACE FELIZ QUE SEAS PARTE DE LA <br /> <strong class="bolder">FAMILIA MOTOBOX </strong> </h4>',
+               showConfirmButton: false,
+               timer: 3000
+           });        })
     </script>
 </body>
 
