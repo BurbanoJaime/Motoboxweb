@@ -36,28 +36,33 @@ body {
         color: $fontGray;
         transition: all .4s;
         text-decoration: none;
-        .fas{
+
+        .fas {
             transition: all .4s;
         }
-        p{
+
+        p {
             margin-left: 5px;
             transition: all .4s;
 
         }
     }
-    &-back:hover{
+
+    &-back:hover {
         transform: translateX(-10px);
 
-        .fas{
+        .fas {
             color: $orange;
             transform: translateX(-5px);
 
         }
-        p{
+
+        p {
             color: $orange;
 
         }
     }
+
     &-logo {
         width: 100%;
         display: block;
@@ -175,7 +180,8 @@ body {
     &-btn {
         width: 100%;
         text-align: center;
-margin-top: 50px;
+        margin-top: 50px;
+
         button {
             height: 40px;
             border: solid 1.5px $blueFont;
@@ -215,4 +221,54 @@ margin-top: 50px;
 
 .service-selected {
     background: $gray;
+}
+
+.swal2-header {
+    .swal2-title {
+        font-family: $muli !important;
+        font-weight: 700 !important;
+        color: $blueFont !important;
+        font-size: 15px !important;
+    }
+}
+
+.swal2-content {
+    #swal-input1 {
+        background: $gray !important;
+        color: #727272 !important;
+        border: solid 1.5px $blueFont!important;
+        font-size: 12px!important;
+        border-radius: 10px!important;
+        min-height: 80px !important;
+
+    }
+
+}
+
+.swal2-actions {
+    .swal2-confirm {
+        height: 40px!important;
+        border: solid 1.5px $blueFont!important;
+        border-radius: 10px!important;
+        background: rgba(0, 69, 144, 0.1)!important;
+        font-family: $muli!important;
+        font-weight: 900!important;
+        letter-spacing: 0.5px!important;
+        color: $blueFont!important;
+        transition: all .4s!important;
+        width: 100%!important;
+        max-width: 320px!important;
+        cursor: pointer!important;
+        margin: 0 !important;
+        padding: 0 50px !important;
+
+    }
+
+    .swal2-confirm:hover {
+        border: solid 1.5px $orange!important;
+        border-radius: 10px!important;
+        color: $orange!important;
+        background: $gray!important;
+    }
+
 }

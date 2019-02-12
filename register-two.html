@@ -16,10 +16,10 @@
 
 <body>
     <section class="register">
-            <a href="register-one.html" class="register-back">
-                    <i class="fas fa-angle-left"></i>
-                    <p>Atrás</p>
-                </a>
+        <a href="register-one.html" class="register-back">
+            <i class="fas fa-angle-left"></i>
+            <p>Atrás</p>
+        </a>
         <article class="register-logo">
             <img src="assets/logo.png" alt="">
             <p> PRIMERO QUEREMOS CONOCERTE</p>
@@ -43,29 +43,52 @@
                 <p>Mecánica 6</p>
             </article>
             <article class="register-service-services">
-                    <p>Mecánica 1</p>
-                    <p>Mecánica 2</p>
-                    <p>Mecánica 3</p>
-                    <p>Mecánica 4</p>
-                    <p>Mecánica 5</p>
-                    <p>Mecánica 6</p>    
+                <p>Mecánica 1</p>
+                <p>Mecánica 2</p>
+                <p>Mecánica 3</p>
+                <p>Mecánica 4</p>
+                <p>Mecánica 5</p>
+                <p>Mecánica 6</p>
             </article>
             <article class="register-service-services" id="add-service-btn">
                 <p>No encuentro el servicio</p>
             </article>
-           
+
         </section>
-        <div class="register-btn">
-                <button type="submit" id="register-one_btn">CREAR CUENTA</button>
-            </div>
+        <div class="register-btn" id="add-service-btn">
+            <button type="submit" id="register-one_btn">CREAR CUENTA</button>
+        </div>
         <article class="register-nav">
             <div></div>
             <div></div>
-            
+
         </article>
         <a href="nuevo-turno-ficha.html">SIGUIENTE</a>
     </section>
 
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+
+    <script>
+        const add = document.getElementById('add-service-btn');
+        add.addEventListener('click', function () {
+            Swal.fire({
+                title: 'Escríbenos el servicios que ofreces',
+                showCloseButton: true,
+                html:
+                '<input id="swal-input1" class="swal2-input" type="textarea">',
+                focusConfirm: false,
+                preConfirm:()=>{
+                    return[
+                       document.getElementById('swal-input1').value,
+                        
+                    ]
+                    console.log(document.getElementById('swal-input1').value);
+                }
+            })
+        });
+    </script>
 </body>
 
 </html>
