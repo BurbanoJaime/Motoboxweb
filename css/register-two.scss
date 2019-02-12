@@ -26,7 +26,38 @@ body {
 }
 
 .register {
+    &-back {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: flex-start;
+        color: $fontGray;
+        transition: all .4s;
+        text-decoration: none;
+        .fas{
+            transition: all .4s;
+        }
+        p{
+            margin-left: 5px;
+            transition: all .4s;
 
+        }
+    }
+    &-back:hover{
+        transform: translateX(-10px);
+
+        .fas{
+            color: $orange;
+            transform: translateX(-5px);
+
+        }
+        p{
+            color: $orange;
+
+        }
+    }
     &-logo {
         width: 100%;
         display: block;
@@ -46,7 +77,6 @@ body {
     }
 
     &-service {
-        //max-width: 730px;
         height: max-content;
         border: solid 1.5px $blueFont;
         color: $blueFont;
@@ -86,6 +116,9 @@ body {
             width: 500px;
             border: none;
             display: inline-block;
+            overflow-y: scroll;
+            max-height: 310px;
+            height: 310px;
 
             p {
                 border: solid 1.5px $orange;

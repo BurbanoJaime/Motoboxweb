@@ -26,6 +26,56 @@ body {
   transition: all .4s;
 }
 
+.register-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #b3b3b4;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  text-decoration: none;
+}
+
+.register-back .fas {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.register-back p {
+  margin-left: 5px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.register-back:hover {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.register-back:hover .fas {
+  color: #FD6500;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+.register-back:hover p {
+  color: #FD6500;
+}
+
 .register-logo {
   width: 100%;
   display: block;
@@ -44,15 +94,73 @@ body {
   margin-top: 12px;
 }
 
+.register-form-one-btn {
+  width: 100%;
+  text-align: center;
+}
+
+.register-form-one-btn button {
+  height: 40px;
+  border: solid 1.5px #687C8F;
+  border-radius: 10px;
+  background: rgba(0, 69, 144, 0.1);
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  letter-spacing: .5px;
+  color: #687C8F;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  width: 100%;
+  max-width: 320px;
+  cursor: pointer;
+}
+
+.register-form-one-btn button:hover {
+  border: solid 1.5px #FD6500;
+  border-radius: 10px;
+  color: #FD6500;
+  background: #f8f8f8;
+}
+
+.register-form-one-btn button:disabled {
+  font-weight: bold;
+  font-family: "Muli", sans-serif;
+  letter-spacing: 2px;
+  border: solid 1.5px #f2f2f2;
+  background: #f8f8f8;
+  height: 40px;
+  color: #b3b3b4;
+  border-radius: 10px;
+}
+
 .register-form-one form {
   width: 80vw;
   max-width: 700px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  box-sizing: border-box;
 }
 
 .register-form-one form div {
   width: 320px;
+  margin-bottom: 15px;
 }
 
 .register-form-one form div label {
@@ -110,40 +218,6 @@ body {
   border: solid 1.5px #687C8F;
   color: #687C8F;
   background: #f2f2f2;
-}
-
-.register-form-one button {
-  height: 40px;
-  border: solid 1.5px #687C8F;
-  border-radius: 10px;
-  background: rgba(0, 69, 144, 0.1);
-  font-family: "Muli", sans-serif;
-  font-weight: 900;
-  letter-spacing: .5px;
-  color: #687C8F;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  width: 100%;
-  max-width: 320px;
-  cursor: pointer;
-}
-
-.register-form-one button:hover {
-  border: solid 1.5px #FD6500;
-  border-radius: 10px;
-  color: #FD6500;
-  background: #f8f8f8;
-}
-
-.register-form-one button:disabled {
-  font-weight: bold;
-  font-family: "Muli", sans-serif;
-  letter-spacing: 2px;
-  border: solid 1.5px #f2f2f2;
-  background: #f8f8f8;
-  height: 40px;
-  color: #b3b3b4;
-  border-radius: 10px;
 }
 
 .register-nav {
