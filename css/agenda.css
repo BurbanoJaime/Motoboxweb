@@ -381,8 +381,52 @@ body {
 
 .turns-content {
   height: 85%;
-  padding: 20px 30px;
+  padding: 20px 50px;
   margin-top: 140px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.turns-content-list {
+  list-style: inherit;
+}
+
+.turns-content-list-title {
+  font-size: 80px;
+  color: #FD6500;
+}
+
+.turns-content-list-title p {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+  color: #FD6500;
+  letter-spacing: 1px;
+  font-size: initial;
+}
+
+.turns-content-list-title p span {
+  color: #b3b3b4;
+  font-weight: 600;
+}
+
+.turns-content-list-title:first-child {
+  color: #6F6F6F;
+}
+
+.turns-content-list-title:first-child p {
+  color: #6F6F6F;
+}
+
+.turns-content-list-item-card {
+  background: #f8f8f8;
+  border: solid 1.5px #687C8F;
+  border-radius: 25px;
+  width: 100%;
+  height: 120px;
+  font-family: "Muli", sans-serif;
+  text-align: center;
+  margin: 25px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,30 +434,21 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-y: scroll;
 }
 
-.turns-content-card {
-  background: #f8f8f8;
-  border: solid 1.5px #687C8F;
-  border-radius: 25px;
-  width: 250px;
-  height: 180px;
-  font-family: "Muli", sans-serif;
-  text-align: center;
-  margin: 10px;
+.turns-content-list-item-card-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,41 +463,60 @@ body {
           justify-content: center;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 40px;
 }
 
-.turns-content-card-info-title {
+.turns-content-list-item-card-info-title {
   font-weight: 900;
   font-size: 18px;
   color: #6F6F6F;
 }
 
-.turns-content-card-info-appointment {
+.turns-content-list-item-card-info-appointment {
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: 600;
-  margin: 10px;
+  margin: 10px 0;
 }
 
-.turns-content-card-info-services span:first-child {
+.turns-content-list-item-card-info-services span:first-child {
   margin-left: 0;
 }
 
-.turns-content-card-info-services span {
+.turns-content-list-item-card-info-services span {
   margin: 0 5px;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
-.turns-content-card-info-services span:hover {
+.turns-content-list-item-card-info-services span:hover {
   color: #FD6500;
 }
 
-.turns-content-card-buttons-schedule {
+.turns-content-list-item-card-buttons {
+  padding-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.turns-content-list-item-card-buttons-schedule {
   width: 200px;
   padding: 6px;
   border: solid 1.5px #687C8F;
@@ -478,13 +532,13 @@ body {
   margin-bottom: 8px;
 }
 
-.turns-content-card-buttons-schedule:hover {
+.turns-content-list-item-card-buttons-schedule:hover {
   border-color: #FD6500;
   color: #FD6500;
   background: white;
 }
 
-.turns-content-card-buttons-cancel {
+.turns-content-list-item-card-buttons-cancel {
   font-weight: 600;
   border: none;
   background: none;
@@ -493,7 +547,7 @@ body {
   transition: all .2s;
 }
 
-.turns-content-card-buttons-cancel:hover {
+.turns-content-list-item-card-buttons-cancel:hover {
   color: #FD6500;
 }
-/*# sourceMappingURL=nuevo-turno-ficha.css.map */
+/*# sourceMappingURL=agenda.css.map */

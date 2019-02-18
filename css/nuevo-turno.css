@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900");
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background: #00000040;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 50;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.bg-turn {
+  font-family: "Muli", sans-serif;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  max-height: 575px;
+  display: block;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border: solid 1px #f2f2f2;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.bg-turn-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.bg-turn-head-title {
+  font-weight: 900;
+  color: #FD6500;
+  letter-spacing: 2px;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.bg-turn-head-close {
+  color: #6F6F6F;
+  margin-left: 15%;
+  margin-right: 7%;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.bg-turn-head-close:hover {
+  color: #FD6500;
+  cursor: pointer;
+}
+
+.bg-turn-content form {
+  padding: 0 10px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.bg-turn-content form label {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+  color: #6F6F6F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.bg-turn-content form label input,
+.bg-turn-content form label textarea {
+  width: 200px;
+  max-width: 200px;
+  min-width: 200px;
+  padding: 5px 0;
+  background: #f8f8f8;
+  border: solid 2px #f2f2f2;
+  border-radius: 10px;
+  padding-left: 10px;
+  color: #6F6F6F;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  font-family: "Muli", sans-serif;
+}
+
+.bg-turn-content form label textarea {
+  height: 60px;
+  min-height: 60px;
+}
+
+.bg-turn-content form label input:focus,
+.bg-turn-content form label textarea:focus {
+  background: #fff;
+  border-color: #FD6500;
+}
+
+.bg-turn-content form label input:hover,
+.bg-turn-content form label textarea:hover {
+  border-color: #FD6500;
+}
+
+.bg-turn-content-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Muli", sans-serif;
+  margin-top: 30px;
+}
+
+.bg-turn-content-buttons-schedule {
+  width: 200px;
+  padding: 6px;
+  border: solid 1.5px #687C8F;
+  border-radius: 10px;
+  background: rgba(0, 69, 144, 0.1);
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  letter-spacing: .5px;
+  color: #687C8F;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  margin: 10px;
+  margin-bottom: 8px;
+  letter-spacing: 1.5px;
+}
+
+.bg-turn-content-buttons-schedule:hover {
+  border-color: #FD6500;
+  color: #FD6500;
+  background: white;
+  cursor: pointer;
+}
+
+.bg-turn-content-buttons-cancel {
+  font-weight: 600;
+  border: none;
+  background: none;
+  color: #6F6F6F;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  opacity: .5;
+}
+
+.bg-turn-content-buttons-cancel:hover {
+  color: #FD6500;
+  opacity: 1;
+  letter-spacing: .2px;
+  cursor: pointer;
+}
+
+.bg-mechanic {
+  z-index: 49;
+  font-family: "Muli", sans-serif;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 575px;
+  display: block;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border: solid 1px #f2f2f2;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.bg-mechanic-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bg-mechanic-search input {
+  width: 100%;
+  border-radius: 100px;
+  padding: 8px;
+  background: #f8f8f8;
+  border: solid 2px #f2f2f2;
+  color: #6F6F6F;
+  font-weight: 600;
+  font-family: "Muli", sans-serif;
+  padding-left: 20px;
+}
+
+.bg-mechanic-content {
+  margin-top: 10px;
+  text-align: center;
+  overflow-y: auto;
+  height: 85%;
+}
+
+.bg-mechanic-content-item {
+  color: #687C8F;
+  padding: 10px 0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.bg-mechanic-content-item:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.disappear {
+  display: none;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.title-swa {
+  margin-top: 10px;
+  font-family: "Muli", sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #6F6F6F;
+}
+
+.text-swa, .appointment-swa {
+  font-family: "Muli", sans-serif;
+  font-weight: 600;
+  margin-top: 30px;
+  letter-spacing: 0.5px;
+}
+
+.text-swa strong, .appointment-swa strong {
+  font-weight: 700;
+}
+
+.appointment-swa {
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.appointment-swa::before, .appointment-swa::after {
+  content: '"';
+  font-weight: 600;
+}
+/*# sourceMappingURL=nuevo-turno.css.map */
