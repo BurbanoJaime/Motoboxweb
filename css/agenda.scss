@@ -322,7 +322,7 @@ body {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            height:70px;
+            height: 70px;
 
             &-line {
                 width: 10px;
@@ -335,7 +335,8 @@ body {
                 align-items: center;
                 margin-right: 10px;
 
-                &-one, &-two {
+                &-one,
+                &-two {
                     background: $orange;
                     height: 30px;
                     width: 3px;
@@ -352,7 +353,7 @@ body {
 
                 }
             }
-            
+
 
             &-title {
                 width: 100%;
@@ -383,12 +384,11 @@ body {
 
         }
 
-        &-itemTitle:first-child{
-            &-line {
-                &-one{
-                height: 0;
-                }
+        &-itemTitle:first-child {
+            .turns-content-itemTitle-line-one {
+                opacity: 0;
             }
+
 
         }
 
@@ -416,7 +416,8 @@ body {
                 margin-right: 10px;
 
 
-                &-one, &-two {
+                &-one,
+                &-two {
                     background: $orange;
                     height: 65px;
                     width: 3px;
@@ -542,15 +543,10 @@ body {
 
         }
 
-        &-item:last-child{
-            &-line{
-                &-two{
-                    height:0 !important;
-                }
+        &-item:last-child {
+            .turns-content-item-line-two {
+                opacity: 0;
             }
         }
-
-
-
     }
 }

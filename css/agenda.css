@@ -491,8 +491,8 @@ body {
   letter-spacing: .5px;
 }
 
-.turns-content-itemTitle:first-child-line-one {
-  height: 0;
+.turns-content-itemTitle:first-child .turns-content-itemTitle-line-one {
+  opacity: 0;
 }
 
 .turns-content-item {
@@ -695,7 +695,7 @@ body {
   color: #FD6500;
 }
 
-.turns-content-item:last-child-line-two {
-  height: 0 !important;
+.turns-content-item:last-child .turns-content-item-line-two {
+  opacity: 0;
 }
 /*# sourceMappingURL=agenda.css.map */
