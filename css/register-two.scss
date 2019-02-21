@@ -86,15 +86,28 @@ body {
         border: solid 1.5px $blueFont;
         color: $blueFont;
         font-weight: 700;
-        box-sizing: border-box;
         border-radius: 15px;
         background: $gray;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: flex-start;
+        max-height: 350px;
 
         &-services {
-            display: inline-block;
+
             padding: 4px;
             border-right: solid 1.5px $blueFont;
             box-sizing: border-box;
+            height: 350px;
+            max-height: 350px;
+            overflow-y: auto;
+            overflow-x: hidden;
 
             p {
                 padding: 20px 70px;
@@ -109,10 +122,6 @@ body {
             }
         }
 
-        &-services:nth-child(1) {
-            border-top-left-radius: 15px;
-        }
-
         &-services:nth-child(2) {
             font-weight: 400;
         }
@@ -120,35 +129,79 @@ body {
         &-services:nth-child(3) {
             width: 500px;
             border: none;
-            display: inline-block;
-            overflow-y: scroll;
-            max-height: 310px;
-            height: 310px;
+            overflow-y: auto;
 
-            p {
-                border: solid 1.5px $orange;
-                background: #ffffff;
-                padding: 10px 20px;
-                border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+
+            div {
                 cursor: pointer;
-                letter-spacing: .5px;
                 margin: 10px 10px;
                 text-align: center;
-                width: max-content;
-                display: inline-block;
+                transition: all .4s;
+                min-width: 120px;
+
+                p {
+                    display: block;
+                    letter-spacing: 1px;
+                    padding: 10px 20px;
+                    ;
+                    border: solid 1.5px $orange;
+                    background: #ffffff;
+                    border-radius: 20px;
+                    transition: all .4s;
+
+                }
+
+                span {
+                    display: none;
+                    padding: 10px 8px;
+                    background: $orange;
+                    color: #ffffff;
+                    border-radius: 20px;
+                    border: solid 1.5px $orange;
+                    transition: all .4s;
+                    min-width: 120px;
+                    box-sizing: content-box;
+                    letter-spacing: 1px;
+
+
+                }
             }
 
-            p:hover {
-                background: $orange;
-                color: #ffffff;
+            div:hover {
+                p {
+                    display: none;
+                }
+
+                span {
+                    display: block;
+
+                }
             }
         }
+    }
 
-        &-services:nth-child(4) {
-            display: block;
-            border-top: solid 1.5px $blueFont;
-            border-right: none;
-        }
+    &-add {
+        background: $gray;
+        text-align: center;
+        padding: 20px;
+        border: solid 1.5px $blueFont;
+        border-top: none;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        color: $blueFont;
+        font-family: $muli;
+        font-weight: 700;
+    }
+
+    &-add:hover{
+        background: $darkGray;
+        cursor: pointer;
     }
 
     &-nav {
@@ -236,9 +289,9 @@ body {
     #swal-input1 {
         background: $gray !important;
         color: #727272 !important;
-        border: solid 1.5px $blueFont!important;
-        font-size: 12px!important;
-        border-radius: 10px!important;
+        border: solid 1.5px $blueFont !important;
+        font-size: 12px !important;
+        border-radius: 10px !important;
         min-height: 80px !important;
 
     }
@@ -247,33 +300,33 @@ body {
 
 .swal2-actions {
     .swal2-confirm {
-        height: 40px!important;
-        border: solid 1.5px $blueFont!important;
-        border-radius: 10px!important;
-        background: rgba(0, 69, 144, 0.1)!important;
-        font-family: $muli!important;
-        font-weight: 900!important;
-        letter-spacing: 0.5px!important;
-        color: $blueFont!important;
-        transition: all .4s!important;
-        width: 100%!important;
-        max-width: 320px!important;
-        cursor: pointer!important;
+        height: 40px !important;
+        border: solid 1.5px $blueFont !important;
+        border-radius: 10px !important;
+        background: rgba(0, 69, 144, 0.1) !important;
+        font-family: $muli !important;
+        font-weight: 900 !important;
+        letter-spacing: 0.5px !important;
+        color: $blueFont !important;
+        transition: all .4s !important;
+        width: 100% !important;
+        max-width: 320px !important;
+        cursor: pointer !important;
         margin: 0 !important;
         padding: 0 50px !important;
 
     }
 
     .swal2-confirm:hover {
-        border: solid 1.5px $orange!important;
-        border-radius: 10px!important;
-        color: $orange!important;
-        background: $gray!important;
+        border: solid 1.5px $orange !important;
+        border-radius: 10px !important;
+        color: $orange !important;
+        background: $gray !important;
     }
 
 }
 
-.popup-title{
+.popup-title {
     color: $blueFont;
     font-weight: bold;
     font-family: $muli;
@@ -282,12 +335,12 @@ body {
     margin-bottom: 20px;
 }
 
-.popup-text{
+.popup-text {
     color: #6F6F6F;
     font-family: $muli;
     margin-bottom: 20px;
 
-    .bolder{
+    .bolder {
         font-family: 700;
         font-family: $muli;
 

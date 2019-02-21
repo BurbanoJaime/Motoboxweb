@@ -101,18 +101,39 @@ body {
   border: solid 1.5px #687C8F;
   color: #687C8F;
   font-weight: 700;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   border-radius: 15px;
   background: #f8f8f8;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-height: 350px;
 }
 
 .register-service-services {
-  display: inline-block;
   padding: 4px;
   border-right: solid 1.5px #687C8F;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: 350px;
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .register-service-services p {
@@ -129,10 +150,6 @@ body {
   cursor: pointer;
 }
 
-.register-service-services:nth-child(1) {
-  border-top-left-radius: 15px;
-}
-
 .register-service-services:nth-child(2) {
   font-weight: 400;
 }
@@ -140,36 +157,85 @@ body {
 .register-service-services:nth-child(3) {
   width: 500px;
   border: none;
-  display: inline-block;
-  overflow-y: scroll;
-  max-height: 310px;
-  height: 310px;
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.register-service-services:nth-child(3) p {
-  border: solid 1.5px #FD6500;
-  background: #ffffff;
-  padding: 10px 20px;
-  border-radius: 20px;
+.register-service-services:nth-child(3) div {
   cursor: pointer;
-  letter-spacing: .5px;
   margin: 10px 10px;
   text-align: center;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  min-width: 120px;
 }
 
-.register-service-services:nth-child(3) p:hover {
+.register-service-services:nth-child(3) div p {
+  display: block;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border: solid 1.5px #FD6500;
+  background: #ffffff;
+  border-radius: 20px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.register-service-services:nth-child(3) div span {
+  display: none;
+  padding: 10px 8px;
   background: #FD6500;
   color: #ffffff;
+  border-radius: 20px;
+  border: solid 1.5px #FD6500;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  min-width: 120px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  letter-spacing: 1px;
 }
 
-.register-service-services:nth-child(4) {
+.register-service-services:nth-child(3) div:hover p {
+  display: none;
+}
+
+.register-service-services:nth-child(3) div:hover span {
   display: block;
-  border-top: solid 1.5px #687C8F;
-  border-right: none;
+}
+
+.register-add {
+  background: #f8f8f8;
+  text-align: center;
+  padding: 20px;
+  border: solid 1.5px #687C8F;
+  border-top: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: #687C8F;
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+}
+
+.register-add:hover {
+  background: #f2f2f2;
+  cursor: pointer;
 }
 
 .register-nav {
@@ -276,8 +342,8 @@ body {
   font-weight: 900 !important;
   letter-spacing: 0.5px !important;
   color: #687C8F !important;
-  -webkit-transition: all 0.4s !important;
-  transition: all 0.4s !important;
+  -webkit-transition: all .4s !important;
+  transition: all .4s !important;
   width: 100% !important;
   max-width: 320px !important;
   cursor: pointer !important;
