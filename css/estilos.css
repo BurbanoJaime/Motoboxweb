@@ -28,6 +28,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 ol, ul {

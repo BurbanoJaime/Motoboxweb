@@ -9,7 +9,6 @@ body {
   height: 100vh;
   background: #00000060;
   position: relative;
-  z-index: 50;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,18 +16,19 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-transition: all .4s;
   transition: all .4s;
+  z-index: 50;
 }
 
 .bg-file {
@@ -37,8 +37,8 @@ body {
   border-radius: 10px;
   width: 100%;
   height: 100%;
-  max-width: 800px;
-  max-height: 550px;
+  max-width: 1000px;
+  max-height: 700px;
   display: block;
   padding: 20px;
   -webkit-box-sizing: border-box;
@@ -62,54 +62,11 @@ body {
   width: 100%;
 }
 
-.bg-file-head-back {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  font-weight: bold;
-  color: #b3b3b4;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  cursor: pointer;
-  margin-top: 10px;
-  padding-left: 10px;
-  text-decoration: none;
-}
-
-.bg-file-head-back .fas {
-  margin-left: 15px;
-  margin-right: 5px;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
-.bg-file-head-back:hover {
-  color: #FD6500;
-}
-
-.bg-file-head-back:hover .fas {
-  margin-left: 0;
-  margin-right: 5px;
-}
-
 .bg-file-head-title {
   text-align: center;
   margin-bottom: 20px;
   padding-top: 10px;
+  margin-left: 35%;
 }
 
 .bg-file-head-title h1 {
@@ -119,12 +76,6 @@ body {
   font-size: 20px;
   text-align: center;
   margin-bottom: 5px;
-}
-
-.bg-file-head-title h3 {
-  font-weight: 400;
-  letter-spacing: 2px;
-  color: #b3b3b4;
 }
 
 .bg-file-head-close {
@@ -140,9 +91,14 @@ body {
 
 .bg-file-content {
   width: 100%;
+  height: 80%;
+  overflow-y: auto;
 }
 
-.bg-file-content-row {
+.bg-file-content-item {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,54 +111,114 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 0 30px;
-  margin-bottom: 20px;
-  font-weight: 700;
+  box-sizing: border-box;
+  border-bottom: solid 1px #f2f2f2;
+  padding: 20px 30px;
 }
 
-.bg-file-content-row-item:nth-child(1) {
-  width: 60%;
+.bg-file-content-item-input {
+  width: 240px;
+  height: 100%;
 }
 
-.bg-file-content-row-item:nth-child(2), .bg-file-content-row-item:nth-child(3), .bg-file-content-row-item:nth-child(4) {
-  border: solid 2px #6F6F6F;
-  border-radius: 5px;
-  width: 15px;
-  height: 15px;
-  text-align: center;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  padding: 5px;
+.bg-file-content-item-input label {
+  width: 100%;
   color: #6F6F6F;
+  font-weight: bold;
 }
 
-.bg-file-content-row-item:nth-child(3), .bg-file-content-row-item:nth-child(4) {
-  border-radius: 15px;
-}
-
-.bg-file-content-row-item {
+.bg-file-content-item-input label input,
+.bg-file-content-item-input label textarea {
+  height: 40px;
+  border: solid 1.5px #f2f2f2;
+  border-radius: 10px;
+  font-weight: 600;
+  font-family: "Muli", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 10px;
   -webkit-transition: all .4s;
   transition: all .4s;
   color: #b3b3b4;
+  padding-left: 15px;
+  width: 100%;
+  max-width: 240px;
+  min-height: 40px;
+  min-width: 240px;
 }
 
-.bg-file-content-row-item:hover {
-  color: #FD6500;
-  border-color: #FD6500;
+.bg-file-content-item-input label textarea {
+  padding-top: 10px;
 }
 
-.bg-file-content-row:nth-child(1) .bg-file-content-row-item {
-  border: none;
-  color: #FD6500;
-  font-weight: 900;
+.bg-file-content-item-input label input:hover,
+.bg-file-content-item-input label textarea:hover {
+  border: solid 1.5px #FD6500;
 }
 
-.bg-file-content-buttons {
+.bg-file-content-item-input label input::-webkit-input-placeholder,
+.bg-file-content-item-input label textarea::-webkit-input-placeholder {
+  color: #b3b3b4;
+  letter-spacing: .5px;
+  font-weight: 600;
+}
+
+.bg-file-content-item-input label input:-ms-input-placeholder,
+.bg-file-content-item-input label textarea:-ms-input-placeholder {
+  color: #b3b3b4;
+  letter-spacing: .5px;
+  font-weight: 600;
+}
+
+.bg-file-content-item-input label input::-ms-input-placeholder,
+.bg-file-content-item-input label textarea::-ms-input-placeholder {
+  color: #b3b3b4;
+  letter-spacing: .5px;
+  font-weight: 600;
+}
+
+.bg-file-content-item-input label input::placeholder,
+.bg-file-content-item-input label textarea::placeholder {
+  color: #b3b3b4;
+  letter-spacing: .5px;
+  font-weight: 600;
+}
+
+.bg-file-content-item-input label input:focus,
+.bg-file-content-item-input label textarea:focus {
+  border: solid 1.5px #687C8F;
+  color: #687C8F;
+  background: #f2f2f2;
+}
+
+.bg-file-content-item-check {
+  width: 100px;
+  height: 100%;
+}
+
+.bg-file-content-item-check label {
+  width: 100%;
+  color: #6F6F6F;
+  font-weight: bold;
+}
+
+.bg-file-content-item-check label input {
+  width: 100%;
+  max-width: 100px;
+  min-height: 20px;
+  min-width: 100px;
+  height: 20px;
+  margin-top: 20px;
+  border: #6F6F6F;
+  background: #f8f8f8;
+}
+
+.bg-file-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,10 +237,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Muli", sans-serif;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
-.bg-file-content-buttons button {
+.bg-file-buttons button {
   width: 200px;
   padding: 6px;
   border: solid 1.5px #687C8F;
@@ -241,10 +257,10 @@ body {
   letter-spacing: 1.5px;
 }
 
-.bg-file-content-buttons button:hover {
+.bg-file-buttons button:hover {
   border-color: #FD6500;
   color: #FD6500;
   background: white;
   cursor: pointer;
 }
-/*# sourceMappingURL=ingreso-dos.css.map */
+/*# sourceMappingURL=trabajar-taller.css.map */
