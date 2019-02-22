@@ -21,7 +21,7 @@ body {
     height: 100vh;
     background: #00000060;
     z-index: 50;
-    position: relative;
+    position: fixed;
 
     display: flex;
     flex-direction: row;
@@ -30,6 +30,7 @@ body {
     align-content: stretch;
     align-items: center;
     transition: all .4s;
+
 
     &-file {
         font-family: $muli;
