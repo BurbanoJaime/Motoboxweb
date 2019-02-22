@@ -66,7 +66,7 @@ body {
   text-align: center;
   margin-bottom: 20px;
   padding-top: 10px;
-  margin-left: 40%;
+  margin-left: 41%;
 }
 
 .bg-file-head-title h1 {
@@ -140,8 +140,8 @@ body {
   font-weight: bold;
 }
 
-.bg-file-content-item-input label input,
-.bg-file-content-item-input label textarea {
+.bg-file-content-item-input label input:disabled,
+.bg-file-content-item-input label textarea:disabled {
   height: 40px;
   border: solid 1.5px #f2f2f2;
   border-radius: 10px;
@@ -164,35 +164,30 @@ body {
   padding-top: 10px;
 }
 
-.bg-file-content-item-input label input:hover,
-.bg-file-content-item-input label textarea:hover {
-  border: solid 1.5px #FD6500;
-}
-
 .bg-file-content-item-input label input::-webkit-input-placeholder,
 .bg-file-content-item-input label textarea::-webkit-input-placeholder {
-  color: #b3b3b4;
+  color: #6F6F6F;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
 .bg-file-content-item-input label input:-ms-input-placeholder,
 .bg-file-content-item-input label textarea:-ms-input-placeholder {
-  color: #b3b3b4;
+  color: #6F6F6F;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
 .bg-file-content-item-input label input::-ms-input-placeholder,
 .bg-file-content-item-input label textarea::-ms-input-placeholder {
-  color: #b3b3b4;
+  color: #6F6F6F;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
 .bg-file-content-item-input label input::placeholder,
 .bg-file-content-item-input label textarea::placeholder {
-  color: #b3b3b4;
+  color: #6F6F6F;
   letter-spacing: .5px;
   font-weight: 600;
 }
@@ -247,12 +242,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 5px;
+  margin-top: 13px;
 }
 
 .bg-file-total-head {
   color: #6F6F6F;
   margin-right: 20px;
+  font-weight: 600;
 }
 
 .bg-file-total-content {
