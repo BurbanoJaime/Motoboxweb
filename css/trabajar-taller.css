@@ -199,6 +199,7 @@ body {
 .bg-file-content-item-check {
   width: 100px;
   height: 100%;
+  text-align: center;
 }
 
 .bg-file-content-item-check label {
