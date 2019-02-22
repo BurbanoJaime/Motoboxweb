@@ -78,6 +78,14 @@ body {
   margin-bottom: 5px;
 }
 
+.bg-file-head-title p {
+  font-weight: 400;
+  color: #b3b3b4;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
 .bg-file-head-close {
   color: #6F6F6F;
   -webkit-transition: all .4s;
