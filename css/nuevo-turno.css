@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900");
-.bg {
+.turns .bg {
   width: 100vw;
   height: 100vh;
   background: #00000060;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 50;
@@ -29,7 +29,7 @@
   transition: all .4s;
 }
 
-.bg-turn {
+.turns .bg-turn {
   font-family: "Muli", sans-serif;
   background-color: #fff;
   border-radius: 10px;
@@ -45,12 +45,12 @@
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   border: solid 1px #f2f2f2;
   position: relative;
-  z-index: 1;
+  z-index: 50;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
-.bg-turn-head {
+.turns .bg-turn-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,7 +60,7 @@
   width: 100%;
 }
 
-.bg-turn-head-title {
+.turns .bg-turn-head-title {
   font-weight: 900;
   color: #FD6500;
   letter-spacing: 2px;
@@ -70,7 +70,7 @@
   margin-bottom: 20px;
 }
 
-.bg-turn-head-close {
+.turns .bg-turn-head-close {
   color: #6F6F6F;
   margin-left: 15%;
   margin-right: 7%;
@@ -78,18 +78,18 @@
   transition: all .4s;
 }
 
-.bg-turn-head-close:hover {
+.turns .bg-turn-head-close:hover {
   color: #FD6500;
   cursor: pointer;
 }
 
-.bg-turn-content form {
+.turns .bg-turn-content form {
   padding: 0 10px;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
-.bg-turn-content form label {
+.turns .bg-turn-content form label {
   font-family: "Muli", sans-serif;
   font-weight: 700;
   color: #6F6F6F;
@@ -109,8 +109,8 @@
   transition: all .4s;
 }
 
-.bg-turn-content form label input,
-.bg-turn-content form label textarea {
+.turns .bg-turn-content form label input,
+.turns .bg-turn-content form label textarea {
   width: 200px;
   max-width: 200px;
   min-width: 200px;
@@ -125,23 +125,23 @@
   font-family: "Muli", sans-serif;
 }
 
-.bg-turn-content form label textarea {
+.turns .bg-turn-content form label textarea {
   height: 60px;
   min-height: 60px;
 }
 
-.bg-turn-content form label input:focus,
-.bg-turn-content form label textarea:focus {
+.turns .bg-turn-content form label input:focus,
+.turns .bg-turn-content form label textarea:focus {
   background: #fff;
   border-color: #FD6500;
 }
 
-.bg-turn-content form label input:hover,
-.bg-turn-content form label textarea:hover {
+.turns .bg-turn-content form label input:hover,
+.turns .bg-turn-content form label textarea:hover {
   border-color: #FD6500;
 }
 
-.bg-turn-content-buttons {
+.turns .bg-turn-content-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,7 +162,7 @@
   margin-top: 30px;
 }
 
-.bg-turn-content-buttons-schedule {
+.turns .bg-turn-content-buttons-schedule {
   width: 200px;
   padding: 6px;
   border: solid 1.5px #687C8F;
@@ -179,14 +179,14 @@
   letter-spacing: 1.5px;
 }
 
-.bg-turn-content-buttons-schedule:hover {
+.turns .bg-turn-content-buttons-schedule:hover {
   border-color: #FD6500;
   color: #FD6500;
   background: white;
   cursor: pointer;
 }
 
-.bg-turn-content-buttons-cancel {
+.turns .bg-turn-content-buttons-cancel {
   font-weight: 600;
   border: none;
   background: none;
@@ -196,21 +196,21 @@
   opacity: .5;
 }
 
-.bg-turn-content-buttons-cancel:hover {
+.turns .bg-turn-content-buttons-cancel:hover {
   color: #FD6500;
   opacity: 1;
   letter-spacing: .2px;
   cursor: pointer;
 }
 
-.bg-mechanic {
-  z-index: 49;
+.turns .bg-mechanic {
+  z-index: 40;
   font-family: "Muli", sans-serif;
   background-color: #fff;
   border-radius: 10px;
   width: 100%;
   height: 100%;
-  max-width: 300px;
+  max-width: 310px;
   max-height: 575px;
   display: block;
   padding: 20px;
@@ -223,7 +223,7 @@
   transition: all .4s;
 }
 
-.bg-mechanic-search {
+.turns .bg-mechanic-search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,7 +232,7 @@
           justify-content: center;
 }
 
-.bg-mechanic-search input {
+.turns .bg-mechanic-search input {
   width: 100%;
   border-radius: 100px;
   padding: 8px;
@@ -244,21 +244,21 @@
   padding-left: 20px;
 }
 
-.bg-mechanic-content {
+.turns .bg-mechanic-content {
   margin-top: 10px;
   text-align: center;
   overflow-y: auto;
   height: 85%;
 }
 
-.bg-mechanic-content-item {
+.turns .bg-mechanic-content-item {
   color: #687C8F;
   padding: 10px 0;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
-.bg-mechanic-content-item:hover {
+.turns .bg-mechanic-content-item:hover {
   background: #f2f2f2;
   cursor: pointer;
 }
@@ -277,14 +277,16 @@
   color: #6F6F6F;
 }
 
-.text-swa, .appointment-swa {
+.text-swa,
+.appointment-swa {
   font-family: "Muli", sans-serif;
   font-weight: 600;
   margin-top: 30px;
   letter-spacing: 0.5px;
 }
 
-.text-swa strong, .appointment-swa strong {
+.text-swa strong,
+.appointment-swa strong {
   font-weight: 700;
 }
 
@@ -293,7 +295,8 @@
   margin-bottom: 40px;
 }
 
-.appointment-swa::before, .appointment-swa::after {
+.appointment-swa::before,
+.appointment-swa::after {
   content: '"';
   font-weight: 600;
 }
