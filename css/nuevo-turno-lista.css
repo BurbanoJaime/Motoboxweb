@@ -320,6 +320,51 @@ body {
 .turns-head-user-menu i:hover {
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
+  color: #FD6500;
+}
+
+.turns-head-user-menu-nav {
+  background: #ffffff;
+  position: fixed;
+  -webkit-box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: 65px;
+  margin-left: 20px;
+  width: 200px;
+}
+
+.turns-head-user-menu-nav ul li {
+  list-style: none;
+  font-family: "Muli", sans-serif;
+  text-align: center;
+  border-bottom: solid 1px #f2f2f2;
+  padding: 8px 0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.turns-head-user-menu-nav ul li a {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #b3b3b4;
+  text-decoration: none;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.turns-head-user-menu-nav ul li:hover {
+  background: #f8f8f8;
+}
+
+.turns-head-user-menu-nav ul li:hover a {
+  color: #FD6500;
+}
+
+.turns-head-user-menu-nav ul li:last-child {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .turns-search {
@@ -517,5 +562,18 @@ body {
 
 .turns-content-card-buttons-cancel:hover {
   color: #FD6500;
+}
+
+.close {
+  display: none;
+}
+
+.active {
+  color: #FD6500;
+}
+
+.active i {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 /*# sourceMappingURL=nuevo-turno-lista.css.map */

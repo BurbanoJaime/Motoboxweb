@@ -39,8 +39,9 @@
                 <div class="dashboard-sort-center-cont">
                     <p>ORDENAR TURNOS</p>
                     <div class="dashboard-sort-center-cont-icons">
-                            <span class="tooltip" title="Vista en Lista"><a href="nuevo-turno-lista.html" class="selected"><i class="fas fa-list-ul"></i></a></span>
-                            <span class="tooltip" title="Vista en Galería"><a href="nuevo-turno-ficha.html"><i class="fas fa-th"></i></a></span>
+                        <span class="tooltip" title="Vista en Lista"><a href="nuevo-turno-lista.html" class="selected"><i
+                                    class="fas fa-list-ul"></i></a></span>
+                        <span class="tooltip" title="Vista en Galería"><a href="nuevo-turno-ficha.html"><i class="fas fa-th"></i></a></span>
                     </div>
                 </div>
                 <div class="dashboard-sort-center-input">
@@ -59,8 +60,8 @@
                 <a href="" class="selected">NUEVOS TURNOS</a>
                 <a href="agenda.html">AGENDA</a>
                 <a href="taller.html">TALLER</a>
-                <a href="">HISTORIAL</a>
-                <a href="">MIS MECÁNICOS</a>
+                <a href="historial.html">HISTORIAL</a>
+                <a href="mecanicos.html">MIS MECÁNICOS</a>
             </div>
             <div class="dashboard-nav-logo">
                 <img src="assets/logo.png" alt="">
@@ -78,11 +79,37 @@
                     <p>MECÁNICO</p>
                 </div>
                 <div class="turns-head-user-photo"></div>
-                <div class="turns-head-user-menu">
+                <div class="turns-head-user-menu" id="general_nav">
                     <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="turns-head-user-menu-nav close" id="general_nav_list">
+                    <ul>
+                        <li><a >Editar Perfil</a></li>
+                        <li><a href="/">Cerrar Sesión</a></li>
+                    </ul>
                 </div>
             </div>
         </section>
+
+        <script>
+            var menu = document.getElementById("general_nav");
+        var list = document.getElementById("general_nav_list");
+
+        menu.addEventListener("click",function(){
+            if(list.classList.contains('close')){
+                list.classList.remove('close');
+            }else{
+                list.classList.add('close');
+            }
+
+            if(menu.classList.contains('active')){
+                menu.classList.remove('active');
+            }else{
+                menu.classList.add('active');
+            }
+        });
+
+        </script>
         <section class="turns-search">
             <input type="search" placeholder="Marca - Modelo">
 
@@ -95,7 +122,6 @@
                 <option value="">Peritaje</option>
                 <option value="">Balanceo</option>
             </select>
-            <a href="nuevo-turno.html">"Click en agendar"</a>
 
         </section>
         <section class="turns-content">

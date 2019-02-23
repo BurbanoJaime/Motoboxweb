@@ -394,7 +394,7 @@ body {
   width: 2.375rem;
   text-align: center;
   pointer-events: none;
-  padding-top: 10px;
+  padding-top: 6px;
 }
 
 .turns-search-input input {
