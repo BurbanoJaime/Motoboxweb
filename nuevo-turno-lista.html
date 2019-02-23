@@ -84,32 +84,12 @@
                 </div>
                 <div class="turns-head-user-menu-nav close" id="general_nav_list">
                     <ul>
-                        <li><a >Editar Perfil</a></li>
+                        <li><a>Editar Perfil</a></li>
                         <li><a href="/">Cerrar Sesión</a></li>
                     </ul>
                 </div>
             </div>
         </section>
-
-        <script>
-            var menu = document.getElementById("general_nav");
-        var list = document.getElementById("general_nav_list");
-
-        menu.addEventListener("click",function(){
-            if(list.classList.contains('close')){
-                list.classList.remove('close');
-            }else{
-                list.classList.add('close');
-            }
-
-            if(menu.classList.contains('active')){
-                menu.classList.remove('active');
-            }else{
-                menu.classList.add('active');
-            }
-        });
-
-        </script>
         <section class="turns-search">
             <input type="search" placeholder="Marca - Modelo">
 
@@ -327,6 +307,25 @@
         </section>
     </section>
 
+
+    <script>
+        var menu = document.getElementById("general_nav");
+        var list = document.getElementById("general_nav_list");
+
+        menu.addEventListener("click", function () {
+            if (list.classList.contains('close')) {
+                list.classList.remove('close');
+            } else {
+                list.classList.add('close');
+            }
+
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active');
+            } else {
+                menu.classList.add('active');
+            }
+        });
+    </script>
 
 </body>
 
