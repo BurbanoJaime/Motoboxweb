@@ -38,27 +38,39 @@ body {
   margin-bottom: 57px;
 }
 
-.login-form form {
+.login-form-log {
   margin-bottom: 55px;
-  text-align: center;
 }
 
-.login-form form input,
-.login-form form a,
-.login-form form button {
+.login-form-log-mail input, .login-form-log-pass input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+}
+
+.login-form-log-mail-icon, .login-form-log-pass-icon {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  pointer-events: none;
+  color: #FD6500;
+  font-size: 18px;
+  z-index: 3px;
+  margin-top: 11px;
+  margin-left: 15px;
+}
+
+.login-form-log a,
+.login-form-log button {
   display: block;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-align: center;
 }
 
-.login-form form .far {
-  color: #FD6500;
-  font-size: 18px;
-  z-index: 3px;
-}
-
-.login-form form input {
+.login-form-log input {
   height: 40px;
   border: solid 1.5px #f2f2f2;
   border-radius: 10px;
@@ -73,41 +85,41 @@ body {
   padding-left: 45px;
 }
 
-.login-form form input:hover {
+.login-form-log input:hover {
   border: solid 1.5px #FD6500;
 }
 
-.login-form form input::-webkit-input-placeholder {
+.login-form-log input::-webkit-input-placeholder {
   color: #b3b3b4;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
-.login-form form input:-ms-input-placeholder {
+.login-form-log input:-ms-input-placeholder {
   color: #b3b3b4;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
-.login-form form input::-ms-input-placeholder {
+.login-form-log input::-ms-input-placeholder {
   color: #b3b3b4;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
-.login-form form input::placeholder {
+.login-form-log input::placeholder {
   color: #b3b3b4;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
-.login-form form input:focus {
+.login-form-log input:focus {
   border: solid 1.5px #687C8F;
   color: #687C8F;
   background: #f2f2f2;
 }
 
-.login-form form a {
+.login-form-log a {
   color: #b3b3b4;
   font-weight: bold;
   margin-bottom: 30px;
@@ -116,11 +128,11 @@ body {
   cursor: pointer;
 }
 
-.login-form form a:hover {
+.login-form-log a:hover {
   color: #687C8F;
 }
 
-.login-form form button {
+.login-form-log button {
   height: 40px;
   border: solid 1.5px #687C8F;
   border-radius: 10px;
@@ -133,14 +145,14 @@ body {
   transition: all .4s;
 }
 
-.login-form form button:hover {
+.login-form-log button:hover {
   border: solid 1.5px #FD6500;
   border-radius: 10px;
   color: #FD6500;
   background: #f8f8f8;
 }
 
-.login-form form button:disabled {
+.login-form-log button:disabled {
   font-weight: bold;
   font-family: "Muli", sans-serif;
   letter-spacing: 2px;

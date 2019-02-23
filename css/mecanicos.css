@@ -383,15 +383,29 @@ body {
   padding-top: 40px;
 }
 
-.turns-search input {
+.turns-search-input {
   width: 40%;
+}
+
+.turns-search-input-icon {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  padding-top: 10px;
+}
+
+.turns-search-input input {
+  width: 100%;
   border-radius: 100px;
   padding: 8px;
   border: none;
   color: #6F6F6F;
   font-weight: 600;
   font-family: "Muli", sans-serif;
-  padding-left: 20px;
+  padding-left: 40    px;
 }
 
 .turns-search select {

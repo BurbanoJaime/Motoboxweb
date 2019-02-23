@@ -306,16 +306,30 @@ body {
         align-items: center;
         padding-top: 40px;
 
-        input {
+        &-input {
             width: 40%;
-            border-radius: 100px;
-            padding: 8px;
-            border: none;
-            color: $fontGrayTitle;
-            font-weight: 600;
-            font-family: $muli;
-            padding-left: 20px;
 
+            &-icon {
+                position: absolute;
+                z-index: 2;
+                display: block;
+                width: 2.375rem;
+                text-align: center;
+                pointer-events: none;
+                padding-top: 10px;
+            }
+
+            input {
+                width: 100%;
+                border-radius: 100px;
+                padding: 8px;
+                border: none;
+                color: $fontGrayTitle;
+                font-weight: 600;
+                font-family: $muli;
+                padding-left: 40    px;
+      
+            }
         }
 
         select {

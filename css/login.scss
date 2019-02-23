@@ -36,22 +36,37 @@ body {
             margin-bottom: 57px;
         }
 
-        form {
+        &-log {
             margin-bottom: 55px;
-            text-align: center;
+            &-mail, &-pass {
+                input{
+                    width: 100%;
+                    box-sizing: border-box;
+                    display: block;
+                }
 
-            input,
+                &-icon {
+                    position: absolute;
+                    z-index: 2;
+                    display: block;
+                    pointer-events: none;
+                    color: $orange;
+                    font-size: 18px;
+                    z-index: 3px;
+                    margin-top: 11px;
+                    margin-left: 15px;
+                }
+            }
+
+
+            
             a,
             button {
+
                 display: block;
                 width: 100%;
                 box-sizing: border-box;
-            }
-
-            .far {
-                color: $orange;
-                font-size: 18px;
-                z-index: 3px;
+                text-align: center;
             }
 
             input {
