@@ -16,13 +16,15 @@ body {
     overflow-y: hidden;
 }
 
-.bg {
+
+//Nuevo Mecanico
+.new {
     width: 100vw;
     height: 100vh;
     background: #00000060;
     position: fixed;
 
-    display: none;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -38,7 +40,7 @@ body {
         width: 100%;
         height: 100%;
         max-width: 450px;
-        max-height: 535px;
+        max-height: 230px;
         display: block;
         padding: 20px;
         box-sizing: border-box;
@@ -57,23 +59,15 @@ body {
                 text-align: center;
                 margin-bottom: 20px;
                 padding-top: 10px;
-                margin-left: 25%;
+                margin-left: 23%;
 
                 h1 {
                     font-weight: 900;
                     color: $orange;
-                    letter-spacing: 4px;
+                    letter-spacing: 3px;
                     font-size: 20px;
                     text-align: center;
                     margin-bottom: 5px;
-                }
-
-                p {
-                    font-weight: 400;
-                    color: $fontGray;
-                    font-size: 14px;
-                    letter-spacing: 1px;
-                    margin-top: 10px;
                 }
 
             }
@@ -102,7 +96,7 @@ body {
                 align-content: stretch;
                 align-items: center;
                 box-sizing: border-box;
-                border-bottom: solid 2px $darkGray;
+                //border-bottom: solid 2px $darkGray;
                 padding: 15px 10px;
 
                 &-title {
@@ -118,45 +112,55 @@ body {
                     width: 50%;
                     box-sizing: border-box;
 
-                    ul {
-                        list-style: none;
+                    .name {
+                        width: 90%;
+                        height: 20px;
+                        font-family: $muli;
+                        padding-left: 10px;
+                        border-radius: 100px;
+                        border: solid 1px $fontGrayTitle;
+                        font-weight: 700;
+                        transition: all .4s;
+                        color: $fontGrayTitle;
 
-                        li {
-                            display: flex;
-                            flex-direction: row;
-                            flex-wrap: wrap;
-                            justify-content: flex-start;
-                            align-content: stretch;
-                            align-items: flex-start;
+                    }
 
-                            .fas {
-                                width: 30px;
-                                background: white;
-                                color: $fontGrayTitle;
-                            }
+                    &-input {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        justify-content: flex-start;
+                        align-content: stretch;
+                        align-items: flex-start;
 
-                            p {
-                                margin-left: 10px;
-                                margin-bottom: 10px;
-                                color: $fontGrayTitle;
+                        .fas {
+                            width: 30px;
+                            background: white;
+                            color: $fontGrayTitle;
+                            margin-left: 10px;
+                        }
 
-                            }
+                        p {
+                            margin-left: 10px;
+                            margin-bottom: 10px;
+                            color: $fontGrayTitle;
                         }
                     }
                 }
             }
 
-            &-item:nth-child(1) {
+            &-item:nth-child(2) {
                 align-items: flex-start;
-
-
             }
 
             &-btns {
                 text-align: center;
-                margin-top: 10px;
+                margin-top: 20px;
+                padding-top: 10px;
+                width: 100%;
+                border-top: solid 1px $darkGray;
 
-                button{
+                button {
                     width: 150px;
                     padding: 6px;
                     border-radius: 10px;
@@ -165,7 +169,7 @@ body {
                     cursor: pointer;
                 }
 
-                &-edit{
+                &-edit {
                     background: rgba(0, 69, 144, 0.1);
                     font-family: $muli;
                     font-weight: 900;
@@ -174,41 +178,26 @@ body {
                     border: solid 1.5px $blueFont;
                 }
 
-                &-edit:hover{
+                &-edit:hover {
                     background: $blueFont;
                     color: #fff;
                 }
 
-                &-delete{
+                &-delete {
                     border: solid 1.5px $orange;
-                    background: rgba(253,101,0,0.1);
+                    background: rgba(253, 101, 0, 0.1);
                     font-family: $muli;
                     font-weight: 900;
                     letter-spacing: .5px;
                     color: $orange;
                 }
 
-                &-delete:hover{
+                &-delete:hover {
                     background: $orange;
                     color: #fff;
                 }
             }
 
         }
-    }
-}
-
-.title-swa{
-    font-weight: 900;
-    color: $orange;
-    letter-spacing: 1px;
-    font-family: $muli;
-}
-
-.text-swa{
-    font-family: $muli;
-    margin: 10px 0;
-    strong{
-        font-weight: bold;
     }
 }

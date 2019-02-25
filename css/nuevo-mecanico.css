@@ -4,12 +4,14 @@ body {
   overflow-y: hidden;
 }
 
-.bg {
+.new {
   width: 100vw;
   height: 100vh;
   background: #00000060;
   position: fixed;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -29,14 +31,14 @@ body {
   z-index: 50;
 }
 
-.bg-file {
+.new-file {
   font-family: "Muli", sans-serif;
   background-color: #fff;
   border-radius: 10px;
   width: 100%;
   height: 100%;
   max-width: 450px;
-  max-height: 535px;
+  max-height: 230px;
   display: block;
   padding: 20px;
   -webkit-box-sizing: border-box;
@@ -50,7 +52,7 @@ body {
   transition: all .4s;
 }
 
-.bg-file-head {
+.new-file-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,47 +62,39 @@ body {
   width: 100%;
 }
 
-.bg-file-head-title {
+.new-file-head-title {
   text-align: center;
   margin-bottom: 20px;
   padding-top: 10px;
-  margin-left: 25%;
+  margin-left: 23%;
 }
 
-.bg-file-head-title h1 {
+.new-file-head-title h1 {
   font-weight: 900;
   color: #FD6500;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   font-size: 20px;
   text-align: center;
   margin-bottom: 5px;
 }
 
-.bg-file-head-title p {
-  font-weight: 400;
-  color: #b3b3b4;
-  font-size: 14px;
-  letter-spacing: 1px;
-  margin-top: 10px;
-}
-
-.bg-file-head-close {
+.new-file-head-close {
   color: #6F6F6F;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
-.bg-file-head-close:hover {
+.new-file-head-close:hover {
   color: #FD6500;
   cursor: pointer;
 }
 
-.bg-file-content {
+.new-file-content {
   width: 100%;
   height: 80%;
 }
 
-.bg-file-content-item {
+.new-file-content-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,30 +114,38 @@ body {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-bottom: solid 2px #f2f2f2;
   padding: 15px 10px;
 }
 
-.bg-file-content-item-title {
+.new-file-content-item-title {
   width: 40%;
 }
 
-.bg-file-content-item-title h3 {
+.new-file-content-item-title h3 {
   font-weight: bold;
   color: #687C8F;
 }
 
-.bg-file-content-item-content {
+.new-file-content-item-content {
   width: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.bg-file-content-item-content ul {
-  list-style: none;
+.new-file-content-item-content .name {
+  width: 90%;
+  height: 20px;
+  font-family: "Muli", sans-serif;
+  padding-left: 10px;
+  border-radius: 100px;
+  border: solid 1px #6F6F6F;
+  font-weight: 700;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  color: #6F6F6F;
 }
 
-.bg-file-content-item-content ul li {
+.new-file-content-item-content-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,8 +153,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -163,30 +165,34 @@ body {
           align-items: flex-start;
 }
 
-.bg-file-content-item-content ul li .fas {
+.new-file-content-item-content-input .fas {
   width: 30px;
   background: white;
   color: #6F6F6F;
+  margin-left: 10px;
 }
 
-.bg-file-content-item-content ul li p {
+.new-file-content-item-content-input p {
   margin-left: 10px;
   margin-bottom: 10px;
   color: #6F6F6F;
 }
 
-.bg-file-content-item:nth-child(1) {
+.new-file-content-item:nth-child(2) {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
-.bg-file-content-btns {
+.new-file-content-btns {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
+  padding-top: 10px;
+  width: 100%;
+  border-top: solid 1px #f2f2f2;
 }
 
-.bg-file-content-btns button {
+.new-file-content-btns button {
   width: 150px;
   padding: 6px;
   border-radius: 10px;
@@ -196,7 +202,7 @@ body {
   cursor: pointer;
 }
 
-.bg-file-content-btns-edit {
+.new-file-content-btns-edit {
   background: rgba(0, 69, 144, 0.1);
   font-family: "Muli", sans-serif;
   font-weight: 900;
@@ -205,12 +211,12 @@ body {
   border: solid 1.5px #687C8F;
 }
 
-.bg-file-content-btns-edit:hover {
+.new-file-content-btns-edit:hover {
   background: #687C8F;
   color: #fff;
 }
 
-.bg-file-content-btns-delete {
+.new-file-content-btns-delete {
   border: solid 1.5px #FD6500;
   background: rgba(253, 101, 0, 0.1);
   font-family: "Muli", sans-serif;
@@ -219,24 +225,8 @@ body {
   color: #FD6500;
 }
 
-.bg-file-content-btns-delete:hover {
+.new-file-content-btns-delete:hover {
   background: #FD6500;
   color: #fff;
-}
-
-.title-swa {
-  font-weight: 900;
-  color: #FD6500;
-  letter-spacing: 1px;
-  font-family: "Muli", sans-serif;
-}
-
-.text-swa {
-  font-family: "Muli", sans-serif;
-  margin: 10px 0;
-}
-
-.text-swa strong {
-  font-weight: bold;
 }
 /*# sourceMappingURL=nuevo-mecanico.css.map */

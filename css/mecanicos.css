@@ -544,14 +544,12 @@ body {
   color: #FD6500;
 }
 
-.new {
+.bg {
   width: 100vw;
   height: 100vh;
   background: #00000060;
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -571,7 +569,7 @@ body {
   z-index: 50;
 }
 
-.new-file {
+.bg-file {
   font-family: "Muli", sans-serif;
   background-color: #fff;
   border-radius: 10px;
@@ -592,7 +590,7 @@ body {
   transition: all .4s;
 }
 
-.new-file-head {
+.bg-file-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,39 +600,47 @@ body {
   width: 100%;
 }
 
-.new-file-head-title {
+.bg-file-head-title {
   text-align: center;
   margin-bottom: 20px;
   padding-top: 10px;
-  margin-left: 23%;
+  margin-left: 25%;
 }
 
-.new-file-head-title h1 {
+.bg-file-head-title h1 {
   font-weight: 900;
   color: #FD6500;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   font-size: 20px;
   text-align: center;
   margin-bottom: 5px;
 }
 
-.new-file-head-close {
+.bg-file-head-title p {
+  font-weight: 400;
+  color: #b3b3b4;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.bg-file-head-close {
   color: #6F6F6F;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
-.new-file-head-close:hover {
+.bg-file-head-close:hover {
   color: #FD6500;
   cursor: pointer;
 }
 
-.new-file-content {
+.bg-file-content {
   width: 100%;
   height: 80%;
 }
 
-.new-file-content-item {
+.bg-file-content-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,35 +664,26 @@ body {
   padding: 15px 10px;
 }
 
-.new-file-content-item-title {
+.bg-file-content-item-title {
   width: 40%;
 }
 
-.new-file-content-item-title h3 {
+.bg-file-content-item-title h3 {
   font-weight: bold;
   color: #687C8F;
 }
 
-.new-file-content-item-content {
+.bg-file-content-item-content {
   width: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.new-file-content-item-content .name {
-  width: 90%;
-  height: 20px;
-  font-family: "Muli", sans-serif;
-  padding-left: 10px;
-  border-radius: 100px;
-  border: solid 1px #6F6F6F;
-  font-weight: 700;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  color: #6F6F6F;
+.bg-file-content-item-content ul {
+  list-style: none;
 }
 
-.new-file-content-item-content-input {
+.bg-file-content-item-content ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,8 +691,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -706,31 +703,30 @@ body {
           align-items: flex-start;
 }
 
-.new-file-content-item-content-input .fas {
+.bg-file-content-item-content ul li .fas {
   width: 30px;
   background: white;
   color: #6F6F6F;
-  margin-left: 10px;
 }
 
-.new-file-content-item-content-input p {
+.bg-file-content-item-content ul li p {
   margin-left: 10px;
   margin-bottom: 10px;
   color: #6F6F6F;
 }
 
-.new-file-content-item:nth-child(2) {
+.bg-file-content-item:nth-child(1) {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
-.new-file-content-btns {
+.bg-file-content-btns {
   text-align: center;
   margin-top: 10px;
 }
 
-.new-file-content-btns button {
+.bg-file-content-btns button {
   width: 150px;
   padding: 6px;
   border-radius: 10px;
@@ -740,7 +736,7 @@ body {
   cursor: pointer;
 }
 
-.new-file-content-btns-edit {
+.bg-file-content-btns-edit {
   background: rgba(0, 69, 144, 0.1);
   font-family: "Muli", sans-serif;
   font-weight: 900;
@@ -749,12 +745,12 @@ body {
   border: solid 1.5px #687C8F;
 }
 
-.new-file-content-btns-edit:hover {
+.bg-file-content-btns-edit:hover {
   background: #687C8F;
   color: #fff;
 }
 
-.new-file-content-btns-delete {
+.bg-file-content-btns-delete {
   border: solid 1.5px #FD6500;
   background: rgba(253, 101, 0, 0.1);
   font-family: "Muli", sans-serif;
@@ -763,8 +759,24 @@ body {
   color: #FD6500;
 }
 
-.new-file-content-btns-delete:hover {
+.bg-file-content-btns-delete:hover {
   background: #FD6500;
   color: #fff;
+}
+
+.title-swa {
+  font-weight: 900;
+  color: #FD6500;
+  letter-spacing: 1px;
+  font-family: "Muli", sans-serif;
+}
+
+.text-swa {
+  font-family: "Muli", sans-serif;
+  margin: 10px 0;
+}
+
+.text-swa strong {
+  font-weight: bold;
 }
 /*# sourceMappingURL=mecanicos.css.map */

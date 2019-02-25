@@ -452,13 +452,15 @@ body {
     }
 }
 
-.new {
+//Información de cada mecanico
+
+.bg {
     width: 100vw;
     height: 100vh;
     background: #00000060;
     position: fixed;
 
-    display: flex;
+    display: none;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -493,15 +495,23 @@ body {
                 text-align: center;
                 margin-bottom: 20px;
                 padding-top: 10px;
-                margin-left: 23%;
+                margin-left: 25%;
 
                 h1 {
                     font-weight: 900;
                     color: $orange;
-                    letter-spacing: 3px;
+                    letter-spacing: 4px;
                     font-size: 20px;
                     text-align: center;
                     margin-bottom: 5px;
+                }
+
+                p {
+                    font-weight: 400;
+                    color: $fontGray;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    margin-top: 10px;
                 }
 
             }
@@ -546,52 +556,45 @@ body {
                     width: 50%;
                     box-sizing: border-box;
 
-                    .name {
-                        width: 90%;
-                        height: 20px;
-                        font-family: $muli;
-                        padding-left: 10px;
-                        border-radius: 100px;
-                        border: solid 1px $fontGrayTitle;
-                        font-weight: 700;
-                        transition: all .4s;
-                        color: $fontGrayTitle;
+                    ul {
+                        list-style: none;
 
-                    }
+                        li {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: flex-start;
+                            align-content: stretch;
+                            align-items: flex-start;
 
-                    &-input {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: nowrap;
-                        justify-content: flex-start;
-                        align-content: stretch;
-                        align-items: flex-start;
+                            .fas {
+                                width: 30px;
+                                background: white;
+                                color: $fontGrayTitle;
+                            }
 
-                        .fas {
-                            width: 30px;
-                            background: white;
-                            color: $fontGrayTitle;
-                            margin-left: 10px;
-                        }
+                            p {
+                                margin-left: 10px;
+                                margin-bottom: 10px;
+                                color: $fontGrayTitle;
 
-                        p {
-                            margin-left: 10px;
-                            margin-bottom: 10px;
-                            color: $fontGrayTitle;
+                            }
                         }
                     }
                 }
             }
 
-            &-item:nth-child(2) {
+            &-item:nth-child(1) {
                 align-items: flex-start;
+
+
             }
 
             &-btns {
                 text-align: center;
                 margin-top: 10px;
 
-                button {
+                button{
                     width: 150px;
                     padding: 6px;
                     border-radius: 10px;
@@ -600,7 +603,7 @@ body {
                     cursor: pointer;
                 }
 
-                &-edit {
+                &-edit{
                     background: rgba(0, 69, 144, 0.1);
                     font-family: $muli;
                     font-weight: 900;
@@ -609,26 +612,41 @@ body {
                     border: solid 1.5px $blueFont;
                 }
 
-                &-edit:hover {
+                &-edit:hover{
                     background: $blueFont;
                     color: #fff;
                 }
 
-                &-delete {
+                &-delete{
                     border: solid 1.5px $orange;
-                    background: rgba(253, 101, 0, 0.1);
+                    background: rgba(253,101,0,0.1);
                     font-family: $muli;
                     font-weight: 900;
                     letter-spacing: .5px;
                     color: $orange;
                 }
 
-                &-delete:hover {
+                &-delete:hover{
                     background: $orange;
                     color: #fff;
                 }
             }
 
         }
+    }
+}
+
+.title-swa{
+    font-weight: 900;
+    color: $orange;
+    letter-spacing: 1px;
+    font-family: $muli;
+}
+
+.text-swa{
+    font-family: $muli;
+    margin: 10px 0;
+    strong{
+        font-weight: bold;
     }
 }
