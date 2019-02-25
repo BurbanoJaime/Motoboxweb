@@ -4,7 +4,7 @@ body {
   overflow-y: hidden;
 }
 
-.bg {
+.bgTwo {
   width: 100vw;
   height: 100vh;
   background: #00000060;
@@ -31,7 +31,7 @@ body {
   transition: all .4s;
 }
 
-.bg-file {
+.bgTwo-file {
   font-family: "Muli", sans-serif;
   background-color: #fff;
   border-radius: 10px;
@@ -52,7 +52,7 @@ body {
   transition: all .4s;
 }
 
-.bg-file-head {
+.bgTwo-file-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,7 +62,7 @@ body {
   width: 100%;
 }
 
-.bg-file-head-back {
+.bgTwo-file-head-back {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,29 +90,29 @@ body {
   text-decoration: none;
 }
 
-.bg-file-head-back .fas {
+.bgTwo-file-head-back .fas {
   margin-left: 15px;
   margin-right: 5px;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
-.bg-file-head-back:hover {
+.bgTwo-file-head-back:hover {
   color: #FD6500;
 }
 
-.bg-file-head-back:hover .fas {
+.bgTwo-file-head-back:hover .fas {
   margin-left: 0;
   margin-right: 5px;
 }
 
-.bg-file-head-title {
+.bgTwo-file-head-title {
   text-align: center;
   margin-bottom: 20px;
   padding-top: 10px;
 }
 
-.bg-file-head-title h1 {
+.bgTwo-file-head-title h1 {
   font-weight: 900;
   color: #FD6500;
   letter-spacing: 4px;
@@ -121,28 +121,28 @@ body {
   margin-bottom: 5px;
 }
 
-.bg-file-head-title h3 {
+.bgTwo-file-head-title h3 {
   font-weight: 400;
   letter-spacing: 2px;
   color: #b3b3b4;
 }
 
-.bg-file-head-close {
+.bgTwo-file-head-close {
   color: #6F6F6F;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
-.bg-file-head-close:hover {
+.bgTwo-file-head-close:hover {
   color: #FD6500;
   cursor: pointer;
 }
 
-.bg-file-content {
+.bgTwo-file-content {
   width: 100%;
 }
 
-.bg-file-content-row {
+.bgTwo-file-content-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,11 +165,11 @@ body {
   font-weight: 700;
 }
 
-.bg-file-content-row-item:nth-child(1) {
+.bgTwo-file-content-row-item:nth-child(1) {
   width: 60%;
 }
 
-.bg-file-content-row-item:nth-child(2), .bg-file-content-row-item:nth-child(3), .bg-file-content-row-item:nth-child(4) {
+.bgTwo-file-content-row-item:nth-child(2), .bgTwo-file-content-row-item:nth-child(3), .bgTwo-file-content-row-item:nth-child(4) {
   border: solid 2px #6F6F6F;
   border-radius: 5px;
   width: 15px;
@@ -181,28 +181,28 @@ body {
   color: #6F6F6F;
 }
 
-.bg-file-content-row-item:nth-child(3), .bg-file-content-row-item:nth-child(4) {
+.bgTwo-file-content-row-item:nth-child(3), .bgTwo-file-content-row-item:nth-child(4) {
   border-radius: 15px;
 }
 
-.bg-file-content-row-item {
+.bgTwo-file-content-row-item {
   -webkit-transition: all .4s;
   transition: all .4s;
   color: #b3b3b4;
 }
 
-.bg-file-content-row-item:hover {
+.bgTwo-file-content-row-item:hover {
   color: #FD6500;
   border-color: #FD6500;
 }
 
-.bg-file-content-row:nth-child(1) .bg-file-content-row-item {
+.bgTwo-file-content-row:nth-child(1) .bg-file-content-row-item {
   border: none;
   color: #FD6500;
   font-weight: 900;
 }
 
-.bg-file-content-buttons {
+.bgTwo-file-content-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,7 +224,7 @@ body {
   margin-top: 50px;
 }
 
-.bg-file-content-buttons button {
+.bgTwo-file-content-buttons button {
   width: 200px;
   padding: 6px;
   border: solid 1.5px #687C8F;
@@ -241,7 +241,7 @@ body {
   letter-spacing: 1.5px;
 }
 
-.bg-file-content-buttons button:hover {
+.bgTwo-file-content-buttons button:hover {
   border-color: #FD6500;
   color: #FD6500;
   background: white;
