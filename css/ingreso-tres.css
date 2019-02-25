@@ -4,7 +4,7 @@ body {
   overflow-y: hidden;
 }
 
-.bgThree {
+.turns-bgThree {
   width: 100vw;
   height: 100vh;
   background: #00000060;
@@ -31,7 +31,7 @@ body {
   z-index: 50;
 }
 
-.bgThree-file {
+.turns-bgThree-file {
   font-family: "Muli", sans-serif;
   background-color: #fff;
   border-radius: 10px;
@@ -52,7 +52,7 @@ body {
   transition: all .4s;
 }
 
-.bgThree-file-head {
+.turns-bgThree-file-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,7 +62,7 @@ body {
   width: 100%;
 }
 
-.bgThree-file-head-back {
+.turns-bgThree-file-head-back {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,29 +90,29 @@ body {
   text-decoration: none;
 }
 
-.bgThree-file-head-back .fas {
+.turns-bgThree-file-head-back .fas {
   margin-left: 15px;
   margin-right: 5px;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
-.bgThree-file-head-back:hover {
+.turns-bgThree-file-head-back:hover {
   color: #FD6500;
 }
 
-.bgThree-file-head-back:hover .fas {
+.turns-bgThree-file-head-back:hover .fas {
   margin-left: 0;
   margin-right: 5px;
 }
 
-.bgThree-file-head-title {
+.turns-bgThree-file-head-title {
   text-align: center;
   margin-bottom: 20px;
   padding-top: 10px;
 }
 
-.bgThree-file-head-title h1 {
+.turns-bgThree-file-head-title h1 {
   font-weight: 900;
   color: #FD6500;
   letter-spacing: 4px;
@@ -121,30 +121,30 @@ body {
   margin-bottom: 5px;
 }
 
-.bgThree-file-head-title h3 {
+.turns-bgThree-file-head-title h3 {
   font-weight: 400;
   letter-spacing: 2px;
   color: #b3b3b4;
 }
 
-.bgThree-file-head-close {
+.turns-bgThree-file-head-close {
   color: #6F6F6F;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
-.bgThree-file-head-close:hover {
+.turns-bgThree-file-head-close:hover {
   color: #FD6500;
   cursor: pointer;
 }
 
-.bgThree-file-content {
+.turns-bgThree-file-content {
   width: 100%;
   height: 75%;
   overflow-y: auto;
 }
 
-.bgThree-file-content form {
+.turns-bgThree-file-content form {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -170,19 +170,19 @@ body {
   padding: 20px 30px;
 }
 
-.bgThree-file-content form div {
+.turns-bgThree-file-content form div {
   width: 240px;
   height: 100%;
 }
 
-.bgThree-file-content form div label {
+.turns-bgThree-file-content form div label {
   width: 100%;
   color: #6F6F6F;
   font-weight: bold;
 }
 
-.bgThree-file-content form div label input,
-.bgThree-file-content form div label textarea {
+.turns-bgThree-file-content form div label input,
+.turns-bgThree-file-content form div label textarea {
   height: 40px;
   border: solid 1.5px #f2f2f2;
   border-radius: 10px;
@@ -199,47 +199,47 @@ body {
   max-width: 240px;
 }
 
-.bgThree-file-content form div label input:hover,
-.bgThree-file-content form div label textarea:hover {
+.turns-bgThree-file-content form div label input:hover,
+.turns-bgThree-file-content form div label textarea:hover {
   border: solid 1.5px #FD6500;
 }
 
-.bgThree-file-content form div label input::-webkit-input-placeholder,
-.bgThree-file-content form div label textarea::-webkit-input-placeholder {
+.turns-bgThree-file-content form div label input::-webkit-input-placeholder,
+.turns-bgThree-file-content form div label textarea::-webkit-input-placeholder {
   color: #b3b3b4;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
-.bgThree-file-content form div label input:-ms-input-placeholder,
-.bgThree-file-content form div label textarea:-ms-input-placeholder {
+.turns-bgThree-file-content form div label input:-ms-input-placeholder,
+.turns-bgThree-file-content form div label textarea:-ms-input-placeholder {
   color: #b3b3b4;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
-.bgThree-file-content form div label input::-ms-input-placeholder,
-.bgThree-file-content form div label textarea::-ms-input-placeholder {
+.turns-bgThree-file-content form div label input::-ms-input-placeholder,
+.turns-bgThree-file-content form div label textarea::-ms-input-placeholder {
   color: #b3b3b4;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
-.bgThree-file-content form div label input::placeholder,
-.bgThree-file-content form div label textarea::placeholder {
+.turns-bgThree-file-content form div label input::placeholder,
+.turns-bgThree-file-content form div label textarea::placeholder {
   color: #b3b3b4;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
-.bgThree-file-content form div label input:focus,
-.bgThree-file-content form div label textarea:focus {
+.turns-bgThree-file-content form div label input:focus,
+.turns-bgThree-file-content form div label textarea:focus {
   border: solid 1.5px #687C8F;
   color: #687C8F;
   background: #f2f2f2;
 }
 
-.bgThree-file-buttons {
+.turns-bgThree-file-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,7 +261,7 @@ body {
   margin-top: 10px;
 }
 
-.bgThree-file-buttons button {
+.turns-bgThree-file-buttons button {
   width: 200px;
   padding: 6px;
   border: solid 1.5px #687C8F;
@@ -278,7 +278,7 @@ body {
   letter-spacing: 1.5px;
 }
 
-.bgThree-file-buttons button:hover {
+.turns-bgThree-file-buttons button:hover {
   border-color: #FD6500;
   color: #FD6500;
   background: white;

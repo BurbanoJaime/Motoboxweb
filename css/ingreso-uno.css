@@ -4,12 +4,14 @@ body {
   overflow-y: hidden;
 }
 
-.bgOne {
+.turns-bgOne {
   width: 100vw;
   height: 100vh;
   background: #00000060;
   z-index: 50;
   position: fixed;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,7 +33,7 @@ body {
   transition: all .4s;
 }
 
-.bgOne-file {
+.turns-bgOne-file {
   font-family: "Muli", sans-serif;
   background-color: #fff;
   border-radius: 10px;
@@ -52,7 +54,7 @@ body {
   transition: all .4s;
 }
 
-.bgOne-file-head {
+.turns-bgOne-file-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,17 +64,17 @@ body {
   width: 100%;
 }
 
-.bgOne-file-head-back {
+.turns-bgOne-file-head-back {
   color: #ffffff;
 }
 
-.bgOne-file-head-title {
+.turns-bgOne-file-head-title {
   text-align: center;
   margin-bottom: 20px;
   padding-top: 10px;
 }
 
-.bgOne-file-head-title h1 {
+.turns-bgOne-file-head-title h1 {
   font-weight: 900;
   color: #FD6500;
   letter-spacing: 4px;
@@ -81,28 +83,28 @@ body {
   margin-bottom: 5px;
 }
 
-.bgOne-file-head-title h3 {
+.turns-bgOne-file-head-title h3 {
   font-weight: 400;
   letter-spacing: 2px;
   color: #b3b3b4;
 }
 
-.bgOne-file-head-close {
+.turns-bgOne-file-head-close {
   color: #6F6F6F;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
-.bgOne-file-head-close:hover {
+.turns-bgOne-file-head-close:hover {
   color: #FD6500;
   cursor: pointer;
 }
 
-.bgOne-file-content {
+.turns-bgOne-file-content {
   width: 100%;
 }
 
-.bgOne-file-content form {
+.turns-bgOne-file-content form {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -129,7 +131,7 @@ body {
   margin-bottom: 10px;
 }
 
-.bgOne-file-content form label {
+.turns-bgOne-file-content form label {
   width: 45%;
   color: #b3b3b4;
   font-weight: bold;
@@ -154,7 +156,7 @@ body {
           box-sizing: border-box;
 }
 
-.bgOne-file-content form label input {
+.turns-bgOne-file-content form label input {
   height: 30px;
   border: solid 1.5px #f2f2f2;
   border-radius: 10px;
@@ -171,45 +173,45 @@ body {
   width: 50%;
 }
 
-.bgOne-file-content form label input:hover {
+.turns-bgOne-file-content form label input:hover {
   border: solid 1.5px #FD6500;
 }
 
-.bgOne-file-content form label input::-webkit-input-placeholder {
+.turns-bgOne-file-content form label input::-webkit-input-placeholder {
   color: #b3b3b4;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
-.bgOne-file-content form label input:-ms-input-placeholder {
+.turns-bgOne-file-content form label input:-ms-input-placeholder {
   color: #b3b3b4;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
-.bgOne-file-content form label input::-ms-input-placeholder {
+.turns-bgOne-file-content form label input::-ms-input-placeholder {
   color: #b3b3b4;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
-.bgOne-file-content form label input::placeholder {
+.turns-bgOne-file-content form label input::placeholder {
   color: #b3b3b4;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
-.bgOne-file-content form label input:focus {
+.turns-bgOne-file-content form label input:focus {
   border: solid 1.5px #687C8F;
   color: #687C8F;
   background: #f2f2f2;
 }
 
-.bgOne-file-content form:nth-child(2) {
+.turns-bgOne-file-content form:nth-child(2) {
   border: none;
 }
 
-.bgOne-file-content-buttons {
+.turns-bgOne-file-content-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,7 +232,7 @@ body {
   font-family: "Muli", sans-serif;
 }
 
-.bgOne-file-content-buttons button {
+.turns-bgOne-file-content-buttons button {
   width: 200px;
   padding: 6px;
   border: solid 1.5px #687C8F;
@@ -247,7 +249,7 @@ body {
   letter-spacing: 1.5px;
 }
 
-.bgOne-file-content-buttons button:hover {
+.turns-bgOne-file-content-buttons button:hover {
   border-color: #FD6500;
   color: #FD6500;
   background: white;
