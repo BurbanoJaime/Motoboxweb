@@ -4,11 +4,13 @@ body {
   overflow-y: hidden;
 }
 
-.bg {
+.turns-bg {
   width: 100vw;
   height: 100vh;
   background: #00000060;
   position: fixed;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,7 +33,7 @@ body {
   z-index: 50;
 }
 
-.bg-file {
+.turns-bg-file {
   font-family: "Muli", sans-serif;
   background-color: #fff;
   border-radius: 10px;
@@ -52,7 +54,7 @@ body {
   transition: all .4s;
 }
 
-.bg-file-head {
+.turns-bg-file-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,14 +64,14 @@ body {
   width: 100%;
 }
 
-.bg-file-head-title {
+.turns-bg-file-head-title {
   text-align: center;
   margin-bottom: 20px;
   padding-top: 10px;
   margin-left: 35%;
 }
 
-.bg-file-head-title h1 {
+.turns-bg-file-head-title h1 {
   font-weight: 900;
   color: #FD6500;
   letter-spacing: 4px;
@@ -78,24 +80,24 @@ body {
   margin-bottom: 5px;
 }
 
-.bg-file-head-close {
+.turns-bg-file-head-close {
   color: #6F6F6F;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
-.bg-file-head-close:hover {
+.turns-bg-file-head-close:hover {
   color: #FD6500;
   cursor: pointer;
 }
 
-.bg-file-content {
+.turns-bg-file-content {
   width: 100%;
   height: 80%;
   overflow-y: auto;
 }
 
-.bg-file-content-item {
+.turns-bg-file-content-item {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -121,19 +123,19 @@ body {
   padding: 20px 30px;
 }
 
-.bg-file-content-item-input {
+.turns-bg-file-content-item-input {
   width: 240px;
   height: 100%;
 }
 
-.bg-file-content-item-input label {
+.turns-bg-file-content-item-input label {
   width: 100%;
   color: #6F6F6F;
   font-weight: bold;
 }
 
-.bg-file-content-item-input label input,
-.bg-file-content-item-input label textarea {
+.turns-bg-file-content-item-input label input,
+.turns-bg-file-content-item-input label textarea {
   height: 40px;
   border: solid 1.5px #f2f2f2;
   border-radius: 10px;
@@ -152,63 +154,63 @@ body {
   min-width: 240px;
 }
 
-.bg-file-content-item-input label textarea {
+.turns-bg-file-content-item-input label textarea {
   padding-top: 10px;
 }
 
-.bg-file-content-item-input label input:hover,
-.bg-file-content-item-input label textarea:hover {
+.turns-bg-file-content-item-input label input:hover,
+.turns-bg-file-content-item-input label textarea:hover {
   border: solid 1.5px #FD6500;
 }
 
-.bg-file-content-item-input label input::-webkit-input-placeholder,
-.bg-file-content-item-input label textarea::-webkit-input-placeholder {
+.turns-bg-file-content-item-input label input::-webkit-input-placeholder,
+.turns-bg-file-content-item-input label textarea::-webkit-input-placeholder {
   color: #b3b3b4;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
-.bg-file-content-item-input label input:-ms-input-placeholder,
-.bg-file-content-item-input label textarea:-ms-input-placeholder {
+.turns-bg-file-content-item-input label input:-ms-input-placeholder,
+.turns-bg-file-content-item-input label textarea:-ms-input-placeholder {
   color: #b3b3b4;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
-.bg-file-content-item-input label input::-ms-input-placeholder,
-.bg-file-content-item-input label textarea::-ms-input-placeholder {
+.turns-bg-file-content-item-input label input::-ms-input-placeholder,
+.turns-bg-file-content-item-input label textarea::-ms-input-placeholder {
   color: #b3b3b4;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
-.bg-file-content-item-input label input::placeholder,
-.bg-file-content-item-input label textarea::placeholder {
+.turns-bg-file-content-item-input label input::placeholder,
+.turns-bg-file-content-item-input label textarea::placeholder {
   color: #b3b3b4;
   letter-spacing: .5px;
   font-weight: 600;
 }
 
-.bg-file-content-item-input label input:focus,
-.bg-file-content-item-input label textarea:focus {
+.turns-bg-file-content-item-input label input:focus,
+.turns-bg-file-content-item-input label textarea:focus {
   border: solid 1.5px #687C8F;
   color: #687C8F;
   background: #f2f2f2;
 }
 
-.bg-file-content-item-check {
+.turns-bg-file-content-item-check {
   width: 100px;
   height: 100%;
   text-align: center;
 }
 
-.bg-file-content-item-check label {
+.turns-bg-file-content-item-check label {
   width: 100%;
   color: #6F6F6F;
   font-weight: bold;
 }
 
-.bg-file-content-item-check label input {
+.turns-bg-file-content-item-check label input {
   width: 100%;
   max-width: 100px;
   min-height: 20px;
@@ -219,7 +221,7 @@ body {
   background: #f8f8f8;
 }
 
-.bg-file-buttons {
+.turns-bg-file-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,7 +243,7 @@ body {
   margin-top: 25px;
 }
 
-.bg-file-buttons button {
+.turns-bg-file-buttons button {
   width: 200px;
   padding: 6px;
   border: solid 1.5px #687C8F;
@@ -258,7 +260,7 @@ body {
   letter-spacing: 1.5px;
 }
 
-.bg-file-buttons button:hover {
+.turns-bg-file-buttons button:hover {
   border-color: #FD6500;
   color: #FD6500;
   background: white;
