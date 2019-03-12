@@ -91,14 +91,13 @@ $orange: #FD6500;
 
             &-btns {
                 text-align: center;
-                margin-top: 10px;
+                margin-top: 15px;
 
                 button {
                     width: 150px;
                     padding: 6px;
                     border-radius: 10px;
                     transition: all .4s;
-                    margin: 10px;
                     cursor: pointer;
                     background: rgba(0, 69, 144, 0.1);
                     font-family: $muli;
