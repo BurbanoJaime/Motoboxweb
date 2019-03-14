@@ -16,7 +16,9 @@ body {
     overflow-y: hidden;
 }
 
+
 .turns{
+
 
 &-bgTwo {
     width: 100vw;
@@ -24,8 +26,8 @@ body {
     background: #00000060;
     position: fixed;
     z-index: 50;
-      top: 0;
-        left: 0;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -41,7 +43,7 @@ body {
         width: 100%;
         height: 100%;
         max-width: 800px;
-        max-height: 550px;
+        max-height: 500px;
         display: block;
         padding: 20px;
         box-sizing: border-box;
@@ -145,8 +147,8 @@ body {
                 &-item:nth-child(4) {
                     border: solid 2px $fontGrayTitle;
                     border-radius: 5px;
-                    width: 15px;
-                    height: 15px;
+                    width: 20px;
+                    height: 20px;
                     text-align: center;
                     box-sizing: content-box;
                     padding: 5px;
@@ -155,7 +157,7 @@ body {
 
                 &-item:nth-child(3),
                 &-item:nth-child(4) {
-                    border-radius: 15px;
+                    border-radius: 20px;
 
                 }
 
@@ -215,5 +217,5 @@ body {
         }
     }
 
-
-}}
+}
+}
