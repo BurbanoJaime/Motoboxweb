@@ -145,8 +145,6 @@ body {
                 &-item:nth-child(2),
                 &-item:nth-child(3),
                 &-item:nth-child(4) {
-                    border: solid 2px $fontGrayTitle;
-                    border-radius: 5px;
                     width: 20px;
                     height: 20px;
                     text-align: center;
@@ -158,17 +156,6 @@ body {
                 &-item:nth-child(3),
                 &-item:nth-child(4) {
                     border-radius: 20px;
-
-                }
-
-                &-item {
-                    transition: all .4s;
-                    color: $fontGray;
-                }
-
-                &-item:hover {
-                    color: $orange;
-                    border-color: $orange;
                 }
             }
 
