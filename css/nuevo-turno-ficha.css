@@ -243,6 +243,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 80vw;
+  height: 70px;
   background: #ffffff;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -382,7 +383,7 @@ body {
 .turns-content {
   height: 85%;
   padding: 20px 30px;
-  margin-top: 140px;
+  margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
