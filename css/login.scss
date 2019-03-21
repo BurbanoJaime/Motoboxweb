@@ -94,7 +94,7 @@ body {
                 margin-bottom: 13px;
                 transition: all .4s;
                 color: $fontGray;
-                padding-left: 45px;
+                padding-left: 15px;
             }
 
 
@@ -180,6 +180,7 @@ body {
             letter-spacing: .5px;
             color: $blueFont;
             transition: all .2s;
+            cursor: pointer;
         }
 
         button:hover {

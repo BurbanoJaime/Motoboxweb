@@ -168,7 +168,13 @@ body {
                         color: $blueFont;
                         background: $darkGray;
                     }
+                    .complete{
+                        border: solid 1.5px $blueFont;
+                        color: $blueFont;
+                        background: $darkGray;
+                    }
                 }
+
             }
         }
 
