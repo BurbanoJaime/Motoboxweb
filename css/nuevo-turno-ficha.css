@@ -320,8 +320,8 @@ body {
 }
 
 .turns-head-user-menu i:hover {
-  -webkit-transform: translateY(5px);
-          transform: translateY(5px);
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
   color: #FD6500;
 }
 
