@@ -36,25 +36,28 @@ body {
         color: $fontGray;
         transition: all .4s;
         text-decoration: none;
-        .fas{
+
+        .fas {
             transition: all .4s;
         }
-        p{
+
+        p {
             margin-left: 5px;
             transition: all .4s;
 
         }
     }
 
-    &-back:hover{
+    &-back:hover {
         transform: translateX(-10px);
 
-        .fas{
+        .fas {
             color: $orange;
             transform: translateX(-5px);
 
         }
-        p{
+
+        p {
             color: $orange;
 
         }
@@ -138,6 +141,13 @@ body {
                     color: $fontGray;
                     font-weight: bold;
 
+                    .register-form-one-input-note {
+                        font-weight: 400;
+                        font-size: 12px;
+                        margin-top: 10px;
+                        margin-bottom: 0;
+                    }
+
                     input {
                         height: 40px;
                         border: solid 1.5px $darkGray;
@@ -151,6 +161,27 @@ body {
                         color: $fontGray;
                         padding-left: 15px;
                         width: 100%;
+                    }
+
+                    select {
+                        height: 40px;
+                        border: solid 1.5px $darkGray;
+                        border-radius: 10px;
+                        font-weight: 600;
+                        font-family: $muli;
+                        box-sizing: border-box;
+                        margin-bottom: 13px;
+                        margin-top: 10px;
+                        transition: all .2s;
+                        color: $blueFont;
+                        padding-left: 15px;
+                        width: 100%;
+                    }
+
+                    select:focus {
+                        color: $blueFont;
+                        font-weight: bold;
+                        font-family: $muli;
                     }
 
                     input:hover {
@@ -168,7 +199,8 @@ body {
                         color: $blueFont;
                         background: $darkGray;
                     }
-                    .complete{
+
+                    .complete {
                         border: solid 1.5px $blueFont;
                         color: $blueFont;
                         background: $darkGray;
