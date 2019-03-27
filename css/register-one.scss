@@ -185,7 +185,7 @@ body {
                     }
 
                     input:hover {
-                        border: solid 1.5px $orange;
+                        border: solid 1.5px $blueFont;
                     }
 
                     input::placeholder {
@@ -239,4 +239,12 @@ body {
         }
 
     }
+}
+
+.error{
+    border: solid 1.5px $orange !important;
+}
+
+.valido{
+    border: solid 1.5px rgb(8, 161, 3) !important;
 }

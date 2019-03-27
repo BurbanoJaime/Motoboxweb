@@ -217,7 +217,7 @@ body {
 }
 
 .register-form-one form div label input:hover {
-  border: solid 1.5px #FD6500;
+  border: solid 1.5px #687C8F;
 }
 
 .register-form-one form div label input::-webkit-input-placeholder {
@@ -289,5 +289,13 @@ body {
 
 .register-nav :first-child {
   background: #b3b3b4;
+}
+
+.error {
+  border: solid 1.5px #FD6500 !important;
+}
+
+.valido {
+  border: solid 1.5px #08a103 !important;
 }
 /*# sourceMappingURL=register-one.css.map */
