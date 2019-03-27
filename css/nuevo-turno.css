@@ -27,6 +27,7 @@
           align-items: center;
   -webkit-transition: all .4s;
   transition: all .4s;
+  display: none;
 }
 
 .turns .bg-turn {

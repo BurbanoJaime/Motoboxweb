@@ -12,8 +12,6 @@ $blue: #004590;
 $orange: #FD6500;
 
 .turns {
-
-
     .bg {
         width: 100vw;
         height: 100vh;
@@ -23,7 +21,7 @@ $orange: #FD6500;
         top: 0;
         left: 0;
         z-index: 50;
-
+        
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -31,6 +29,7 @@ $orange: #FD6500;
         align-content: stretch;
         align-items: center;
         transition: all .4s;
+        display: none;
 
         &-turn {
             font-family: $muli;

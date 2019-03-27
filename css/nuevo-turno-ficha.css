@@ -326,7 +326,7 @@ body {
 }
 
 .turns-search {
-  padding: 20px 50px;
+  padding: 20px 40px;
   background: #687C8F;
   position: absolute;
   width: 100%;
@@ -383,7 +383,7 @@ body {
 .turns-content {
   height: 85%;
   padding: 20px 30px;
-  margin-top: 70px;
+  margin-top: 11%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -496,5 +496,85 @@ body {
 
 .turns-content-card-buttons-cancel:hover {
   color: #FD6500;
+}
+
+/* media query */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .dashboard {
+    width: 25vw;
+  }
+  .dashboard-sort-center-cont {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .dashboard-sort-center-cont p {
+    width: 70%;
+  }
+  .dashboard-nav-menu a {
+    text-align: center;
+    width: 90%;
+    border-radius: 25px;
+  }
+  .turns {
+    margin-left: 25vw;
+    width: 75vw;
+  }
+  .turns-head {
+    width: 75vw;
+  }
+  .turns-search select {
+    width: 30%;
+  }
+  .turns-content {
+    margin-top: 18%;
+  }
+  .turns-content-card {
+    width: 300px;
+    margin: 10px 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .dashboard {
+    width: 30vw;
+    padding: 0 15px;
+  }
+  .dashboard-sort-center-cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dashboard-sort-center-cont p {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .dashboard-nav-menu a {
+    text-align: center;
+    width: 90%;
+    border-radius: 25px;
+  }
+  .turns {
+    margin-left: 30vw;
+    width: 70vw;
+  }
+  .turns-head {
+    width: 70vw;
+    padding: 15px 30px;
+  }
+  .turns-search select {
+    width: 30%;
+  }
+  .turns-content {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 25%;
+  }
+  .turns-content-card {
+    width: 300px;
+  }
 }
 /*# sourceMappingURL=nuevo-turno-ficha.css.map */
